@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+<title>TextArea</title>
+</head>
+<style>
+    .found {
+	background-color: orange;
+	font-weight: bold;
+	color: blue;
+	}
+    #results {
+	border: solid blue 2px; 
+	width: 200px;
+	}
+</style>
+<body>
+<form name= "myForm">
+<textarea name = "myText" cols = "35" rows = "5">Found gmail in gmail</textarea>
+<br>
+<input name="searchField">
+<input type="button" onClick="searchText()" value="Search Text">
+</form>
+Results:
+<div id="results"></div>
+</form>
+<script>
+function searchText(){
+   var inStr = document.myForm.myText.value;
+   var searchStr = document.myForm.searchField.value;
+    
+    var regX = new RegExp("(" + searchStr + ")", "g");  
+    
+   var foundCount = (searchStr == "") ? 0 : inStr.match(regX).length
+    inStr = inStr.replace(regX, "<span class='found'>$1</span>");
+    document.getElementById("results").innerHTML = "<b>" + foundCount + "<br>" + inStr.indexOf("gmail") + "<br>" + " </b>results found.<br><br> " + inStr;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+
+
+
+var userInfo={
+user:"Tony",
+password:"jhkhkjk",
+city:"Berlin",
+role:"user",
+}
+userInfo.password="jhk";//poxel password
+Object.defineProperty(userInfo,"password",{//default inqn lriv false e
+enumereible:true,//apahovum e pakvacutyun for i jamanak
+configurable:true,//key ckes karox poxel avelacnel
+writable:true,//valun kpoxe
+})
+for(var i in userInfo){
+console.log(userInfo);
+}*/
+/*var arr=[];
+function Item(name,price,count){
+this.name=name,
+this.price=price,
+this.count=count
+}
+function addToCard(name,price,count){
+
+var item=new Item(name,price,count);
+for(var i in Item){
+if(item[i].name===name){
+if(item[i].count===count){
+count++;
+}
+arr.push(Item)
+return arr;
+}
+}
+}
+console.log(addToCard("car",15000,1));
+console.log(addToCard("bag",9000,15));
+console.log(addToCard("shoes",20000,35));
+var a = 10;
+a = 10 > 20 ? 30 : 40;
+alert(a);
+
+var pattern  =  /@/;
+var str  =  "my_email@yandex.com";
+str.search( pattern);
+pattern.test( str); 
+var pattern  =  /yandex|gmail|mail/;  
+str.search( pattern);
+pattern.test( str); 
+var pattern  =  /\//; 
+
+"site.com/contact".search( patter);
+
+pattern.test( "site.com/contact"); 
+
+var  reg  =/^(\w+)@([a-z]{2,})\.([a-z]{2,5})$/i;
+var  str   ="my_mail@yandex.ru";*/
+/*var userName = prompt('Кто пришёл?', '');
+
+if (userName == 'Админ') {
+
+  var pass = prompt('Пароль?', '');
+
+  if (pass == 'Чёрный Властелин') {
+    alert( 'Добро пожаловать!' );
+  } else if (pass == null) { // (*)
+    alert( 'Вход отменён' );
+  } else {
+    alert( 'Пароль неверен' );
+  }
+
+} else if (userName == null) { // (**)
+  alert( 'Вход отменён' );
+
+} else {
+
+  alert( 'Я вас не знаю' );
+
+}*/
+/*var d=new Date();
+//document.write(d);
+if(d>17){
+document.write("office closed");
+}else{
+document.write("office open");
+}*/
+/*function doNothing() {
+  return;
+}
+
+alert( doNothing() === undefined ); // true*/
+
+/*function factorial(num) {
+if((num == 0) || (num == 1))
+return 1;
+else
+return (num*factorial(num-1));
+}
+console.log(factorial(3));*/
+
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>W3SCHOOLS TASKS</title>
+</head>
+<body>
+<script>
+////toUpperCase 
+function upperCase(str) {
+var arr = str.split('-');
+for (var i = 0; i < arr.length; i++) {
+	arr[i] = arr[i].toUpperCase();
+var res = arr.join(' ');
+
+}
+return res;
+
+}
+console.log(upperCase("i learn javascript!"));
+
+
+// toLowerCase
+function lower(str) {
+var arr = str.split('-');
+ for (var i = 0; i < arr.length; i++) {
+  arr[i] = arr[i].toLowerCase();
+var res = arr.join(' '); 
+}
+return res;
+}
+console.log(lower('I DONT LIKE PHP '));
+/// 
+function make(str) {
+var arr = str.split(" ");
+ for( var i=0; i<arr.length; i++) {
+arr[i] = arr[i].slice(0,1).toUpperCase() + arr[i].slice(1);
+var rex= arr.join(" "); 
+}
+return rex;
+}console.log(make("hello armenia"));
+
+//1.Display the position of the first occurrence of "World" in the variable txt.
+/*var txt = "Hello World"; 
+var rex = txt.indexOf("World");
+console.log(text);*///6
+
+//2.Use the slice() method to display only "Banana,Kiwi".
+/*var fruits = "Apple,Banana,Kiwi";
+var str = fruits.slice(6);
+console.log(str);*/
+
+//3.Use the replace() method to replace "World" with "Universe".
+/*var txt = "Hello World";
+var str = txt.replace("World", "Universe");
+console.log(str);*/
+
+//4.Convert the value of txt to upper case.
+
+/*var txt = "Hello World";
+var str = txt.toUpperCase();
+console.log(str);*/
+
+//// 5.Convert the value of txt to lower case.
+/*var txt = "Hello World";
+var str = txt.toLowerCase();
+console.log(str);*/
+
+//6.Use the concat() method to join the two strings: str1 and str2.
+
+/*var str1 = "Hello ";
+var str2 = "World!";
+var rex = str1.concat(str2);
+console.log(rex);*/
+
+
+</script>
+</body>
+</html>

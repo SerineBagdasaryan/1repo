@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Test Bed</title>
+<style>
+    body{
+	background-color:lightblue;
+	}
+    .found {
+	background-color: orange;
+	font-weight: bold;
+	color: blue;
+	}
+    #results {
+	border: solid blue 2px; 
+	width: 200px;
+	}
+</style>
+<script language="JavaScript" type="text/javascript">
+function searchText(){
+    inStr = document.myForm.myText.value;
+    searchStr = document.myForm.searchField.value;
+    //make reg ex with search string (not special chars like . need to be escaped with \ in search box)
+    var regX = new RegExp("(" + searchStr + ")", "g");  //to make it case INsenstive change "g" to "gi"
+    
+    foundCount = (searchStr == "") ? 0 : inStr.match(regX).length
+    inStr = inStr.replace(regX,);
+    document.getElementById("results").innerHTML = "<b>" + foundCount +  inStr.indexOf("gmail") + "<br>" + " </b>results found.<br><br> " + inStr;
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" onsubmit="return false;">
+<textarea name="myText" rows="4" cols="60">
+
+</textarea>
+<br>
+<input size="20" name="searchField"><input type="submit" onClick="searchText()" value="Search Text">
+</form>
+Results:
+<div id="results"></div>
+</body>
+</html>
