@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Emmanuella</title>
+</head>
+<body>
+<script>
+function myArr(n) {
+	var arr=[];
+	var index = 1;
+	for (var i = 1; i <= n; i++) {
+	var num = i.toString();
+	var nextNum = i + 1;
+	var numLength = num.length;
+	var nextNumLength = nextNum.toString().length; 
+	if (typeof arr[index]  === 'undefined'){
+	arr[index] = [];
+	}
+	if(typeof arr[index][0] === 'undefined'){
+	arr[index][0] = [];
+	}
+	if (typeof arr[index][1] === 'undefined'){
+	arr[index][1] = [];
+	}
+	if (i%2 == 0) {
+	arr[index][0].push(i);
+	}else {
+	arr [index][1].push(i);
+	}
+	if(numLength != nextNumLength){
+	      index++;
+	}
+console.log(arr)
+}
+for (var prop in arr) {
+ document.write( prop + '<br>' + arr[prop][0] + '<br>' + arr[prop][1] + '<br>');
+}
+}
+myArr(1000);
