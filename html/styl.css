@@ -1,0 +1,88 @@
+
+
+body{
+ background-color: black;
+}
+.full_width{
+ max-width: 1000px;
+ margin: 0 auto;
+}
+.text_bottom{
+ color: rgb(255,236,168);
+ display: flex;
+
+}
+.luxury{
+ padding: 22px 0px;
+ transform: translateY(65px);
+}
+.furn{
+ width: 445px;
+ text-align: center;
+ font-size: 43px;
+}
+.ramka{
+ position: relative;
+ z-index: 2;
+}
+.nkar{
+ position: absolute;
+ top: 15%;
+ left: 48px;
+}
+.div1{
+ align-items: center;
+ display: flex;
+ justify-content: space-between;
+}
+.div2{
+ background: url("draw.png")no-repeat;
+ background-size: 100% 270px;
+ background-position: center;
+}
+.ull ul li{
+ padding-top: 25px;
+ text-align: right;
+ list-style-type: none;
+}
+li:after {
+ content: url("shape.png");
+}
+.ull ul li a{
+ color: rgb(255,236,168);
+ text-decoration: none;
+ font-size: 20px;
+ padding-right: 15px;
+}
+.container{
+ display: flex;
+ flex-wrap: wrap;
+ width: 1000px;
+ margin: 0 auto;
+}
+.text_wel{
+ color: rgb(255,236,168);
+}
+p{
+ color: white;
+}
+span{
+ color: rgb(202,117,24);
+}
+.list ul li a{
+ color: white;
+}
+.list ul li {
+ list-style-image: url("arrow.png");
+}
+.foot{
+ display: flex;
+ align-items: center;
+
+}
+.foot div{
+ width: 20%;
+}
+
+
+

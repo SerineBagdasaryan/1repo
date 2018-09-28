@@ -1,0 +1,164 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+/*var i = 1; ///////////////  3-i bazmapatkman axyusak
+var msg = '';
+while (i < 10) {
+  msg+= i + ' x 3 = ' + (i * 3) + '<br>';  
+  i++;
+}
+document.write(msg);
+
+*/
+var body = document.getElementsByTagName("body");
+
+body.addEventListener("load", myFunction(), false);
+
+function myFunction() {
+
+        var div = document.createElement("Div");
+        div.style.width = "150px";
+		div.style.height = "100px";
+		div.style.border = "thick solid #0000FF";
+		div.style.float = "left";
+		div.style.margin = "20px";
+		div.style.marginLeft = "30%";
+		div.style.backgroundImage = "url(images/balloon-2331488_960_720.jpg)"
+		div.style.backgroundSize = "cover";
+		div.id = "id1";
+
+		var div1 = document.createElement("Div");
+        div1.style.width = "150px";
+		div1.style.height = "100px";
+		div1.style.border = "thick solid #0000FF";
+		div1.style.float = "left";
+		div1.style.margin = "20px";
+		div1.style.backgroundImage = "url(images/MothersDay-Photos-hero.2e16d0ba.fill-1440x810.jpg)"
+		div1.style.backgroundSize = "cover";
+		div1.id = "id2";
+
+		var div2 = document.createElement("Div");
+        div2.style.width = "150px";
+		div2.style.height = "100px";
+		div2.style.border = "thick solid #0000FF";
+		div2.style.float = "left";
+		div2.style.margin = "20px";
+		div2.style.backgroundImage = "url(images/shell-2152029_960_720.jpg)"
+		div2.style.backgroundSize = "cover";
+		div2.id = "id3";
+
+	var d  = document.getElementsByTagName("body")[0].appendChild(div);
+	var d1 = document.getElementsByTagName("body")[0].appendChild(div1);
+	var d2 = document.getElementsByTagName("body")[0].appendChild(div2);
+
+	d.style.visibility = "hidden";
+	d1.style.visibility = "hidden";
+	d2.style.visibility = "hidden";
+
+	function createButton() {
+	    var btn = document.createElement("BUTTON");
+	    var t = document.createTextNode("CLICK ME");
+   		 btn.appendChild(t);
+   		 document.body.appendChild(btn);
+	    btn.id = "button";
+	} createButton()
+
+	function createButtonUpdate1() {
+	    var btn1 = document.createElement("BUTTON");
+	    var t1 = document.createTextNode("UPDATE");
+   		 btn1.appendChild(t1);
+   		 document.getElementById("id1").appendChild(btn1);
+	    btn1.id = "button1";
+	} createButtonUpdate1()
+
+	function createButtonDelete1() {
+	    var btn1 = document.createElement("BUTTON");
+	    var t1 = document.createTextNode("DELETE");
+   		 btn1.appendChild(t1);
+   		 document.getElementById("id1").appendChild(btn1);
+	    btn1.id = "delete1";
+	} createButtonDelete1()
+
+	function createButtonUpdate2() {
+	    var btn2 = document.createElement("BUTTON");
+	    var t2 = document.createTextNode("UPDATE");
+   		 btn2.appendChild(t2);
+   		 document.getElementById("id2").appendChild(btn2);
+	    btn2.id = "button2";
+	} createButtonUpdate2()
+
+	function createButtonDelete2() {
+	    var btn2 = document.createElement("BUTTON");
+	    var t2 = document.createTextNode("DELETE");
+   		 btn2.appendChild(t2);
+   		 document.getElementById("id2").appendChild(btn2);
+	    btn2.id = "delete2";
+	} createButtonDelete2()
+
+	function createButtonUpdate3() {
+	
+	    var btn3 = document.createElement("BUTTON");
+	    var t3 = document.createTextNode("UPDATE");
+   		 btn3.appendChild(t3);
+   		 document.getElementById("id3").appendChild(btn3);
+	    btn3.id = "button3";
+	} createButtonUpdate3()
+
+	function createButtonDelete3() {
+	    var btn3 = document.createElement("BUTTON");
+	    var t3 = document.createTextNode("DELETE");
+   		 btn3.appendChild(t3);
+   		 document.getElementById("id3").appendChild(btn3);
+	    btn3.id = "delete3";
+	} createButtonDelete3()
+
+	var but = document.getElementById("button");
+	but.onclick = function(){
+		d.style.visibility = "visible";
+		d1.style.visibility = "visible";
+		d2.style.visibility = "visible";
+	}
+
+	var but1 = document.getElementById("button1");
+	but1.onclick = function(){
+		var temp = div.style.backgroundImage;
+		div.style.backgroundImage = div1.style.backgroundImage;
+		div1.style.backgroundImage = temp;
+	}
+
+	var but1_del = document.getElementById("delete1");
+		but1_del.onclick = function(){
+	        var delete_div1 = document.getElementById('id1');
+	        delete_div1.parentNode.removeChild(delete_div1);
+	}
+
+	var but2 = document.getElementById("button2");
+	but2.onclick = function(){
+		var temp1 = div1.style.backgroundImage;
+		div1.style.backgroundImage = div2.style.backgroundImage;
+		div2.style.backgroundImage = temp1;
+	}
+	var but2_del = document.getElementById("delete2");
+		but2_del.onclick = function(){
+	        var delete_div2 = document.getElementById('id2');
+	       delete_div2.parentNode.removeChild(delete_div2);
+	}
+
+	var but3 = document.getElementById("button3");
+	but3.onclick = function(){
+		temp2 = div2.style.backgroundImage;
+		div2.style.backgroundImage = div.style.backgroundImage;
+		div.style.backgroundImage = temp2;
+	}
+	var but3_del = document.getElementById("delete3");
+		but3_del.onclick = function(){
+	        var delete_div3 = document.getElementById('id3');
+	        delete_div3.parentNode.removeChild(delete_div3);
+	}
+		
+};*/
+</script>
+</body>
+</html>

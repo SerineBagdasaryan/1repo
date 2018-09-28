@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JavaScript has an built-in function constructor.</p>
+
+<script>
+
+var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+
+var rand = Math.floor(Math.random() * arr.length);
+
+alert( arr[rand] );
+
+
+
+
+
+
+
+
+/*var myFunction = new Function("a", "b", "return a * b");
+document.write (myFunction(4, 9));*/
+var arr=["kis","rex","nel","jul"];
+function add(arr,arra){
+var arra=[];
+for(var i=0;i<arr.length;i++){
+arra.push(arr[i]);
+}
+
+return arra;
+}
+
+/*var arr=[];
+for(var i=0;i<53;i++){
+if(i%2==!0){
+arr.push([i]);
+}
+}
+console.log(arr);*/
+function sumAll() {
+    var i;
+    var sum = 0;
+    for(i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+} 
+document.write(sumAll(9, 123, 500, 115, 44, 88));
+
+			
+
+if(a==b)
+{
+	հրաման 1;
+	հրաման 2;
+}
+else
+{
+	հրաման 3;
+	հրաման 4;
+}
+
+var dasntac = {
+		title:"HTML և CSS",
+		kurs:"Առաջին",
+		id:55
+	      };
+
+
+/* այս երկու եղանակներով կարող ենք ստանալ
+ օբյեկտի հատկության արժեքը և վերագրել դրանք а փոփոխականին
+*/
+a = dasntac.title;
+a = dasntac['title'];
+
+//այստեղ արդեն փոխում ենք օբյեկտի հատկությունը
+dasntac.title = "Ջավասքրիփթ";
+			
+
+		
+
+Undefined և Null
+
+			
+
+var a; 		//а փոփոխականի տիպը Undefined է
+var b=null;  	//b փոփոխականի տիպը Null է
+			
+
+		
+
+Փոփոխական = Օբյեկտ
+
+Ջավասքրիփթում բոլոր փոփոխականները օբյեկտներ են
+
+			
+
+//փոփոխականները կարելի է հայտարարել նաև որպես օբյեկտներ				
+var anun = new String; 
+var qanak = new Number;
+var arkayutun = new Boolean;
+			
+
+
+		
+
+typeof()
+
+փոփոխականի տիպը կարելի է իմանալ typeof() ֆունկցիայի միջոցով
+
+			
+
+var a = "25";
+var b = 100;
+var c = a + b;
+var tip = typeof(c);
+alert(tip);
+			
+
+
+
+ var myObject = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+}
+myObject.fullName();         // Will return "John Doe"
+
+match()
+
+
+
+var str="Ուղեղը գտնվում է մարդկանց գանգի մեջ․ որոշ մարդականց!";
+
+var str1 = str.match("մարդկանց");
+
+var str2 = str.match("մրդկանց");
+		
+
+Որոնում և փոխարինում
+
+replace()
+
+
+var str="Ես գրում եմ andur translitov!"
+
+var n=str.replace("andur translitov","Նորմալ հայատառ հայերենով");
+
+Տողերի մեծատառ և փոքրատառ ռեգիստրի փոխակերպում
+
+toUpperCase() և toLowerCase()
+
+
+var a = new String("փոքրատառերով գրված տեքստ");
+
+var a1 = a.toUpperCase();
+
+var b = new String("ՄԵԾԱՏԱՌԵՐՈՎ ԳՐՎԱԾ ՏԵՔՍՏ");
+
+var b1 = b.toLowerCase();
+
+Բացատների հեռացում
+
+trim()
+
+
+var str = new String(" այստեղ սկզբից և վերջից կա բացատ ");
+
+var str = str.trim();
+
+var str1 = new String("    մի քանի բացատներ    ");
+
+var str1 = str1.trim();
+
+		
+
+Տողերի կտրատման եղանակներ
+Տողը դարձնել զանգված
+
+split()
+
+
+var a = new String("կով փիղ ոչխար ավանակ բեգեմոտ");
+
+var animals = a.split(" ");
+
+var b = new String("html,css,javascript,mysql,php,");
+
+var tech = b.split(",");
+		
+
+Ենթատողեր
+
+substr() և substring()
+
+
+
+var str = "Բարև աշխարհ";
+
+var res = str.substr(1,3); //սկիզբ, երկարություն			
+
+var str = "Բարև աշխարհ!";
+
+var res = str.substring(5,11); //երկու ինդեքս
+
+		
+
+Date օբյեկտը
+
+Աշխատանք ժամանակի հետ
+
+
+//Կոնստրուկտորներ				
+var d = new Date(); 	       // ներկան
+
+var d = new Date(milliseconds); //միլիվարկյաններ սկսած 1970/01/01
+
+var d = new Date(dateString);   // '2012-05-06'
+
+var d = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+			
+
+
+//Օրինակներ				
+var now = new Date();
+
+var d1 = new Date("October 13, 1975 11:13:00");
+
+var d2 = new Date(79,5,24);
+
+var d3 = new Date(79,5,24,11,33,0);
+			
+
+Date օբյեկտի getter հատկությունները
+
+
+var now = new Date();
+var date = now.getDate(); //ամսվա օրը
+var day = now.getDay();  //շաբաթվա օրը (0-6)
+var year = now.getFullYear(); //տարին , քառանիշ
+var month = now.getMonth(); //ամիսը (0-11)
+var hour = now.getHours(); //ժամերը (0-23)
+var minutes = now.getMinutes(); //վարկյանները (0-59)
+//....
+		
+
+setTimeout, setInterval
+
+հետաձգված կատարում և պարբերական կատարումներ
+
+setTimeout()
+
+
+			setTimeout('alert("kuku")', 1000);
+			
+			//կամ
+			
+			setTimeout('function1()', 1000);
+			
+			function function1(){
+			//անում է որևէ բան
+		}
+
+HTML,CSS, Javascript դասընթացի համար
+Number օբյեկտի որոշ մեթոդները
+
+    toExponential(x)
+    toFixed(x)
+    toPrecision(x)
+    toString()
+
+			
+
+var a = new Number(45.3569);
+
+var b = a.toExponential(); //b=4.53569e+1
+
+var c = a.toFixed(3);	  //c=45.357
+
+var d = a.toPrecision(2);	 //d=45.35
+
+var e = a.toString();		//թիվը դարձնում է տող
+
+NaN
+Մեկ այլ որոնվման տեսակ
+
+match()
+
+
+
+var str="Ուղեղը գտնվում է մարդկանց գանգի մեջ․ որոշ մարդականց!";
+
+var str1 = str.match("մարդկանց");
+
+var str2 = str.match("մրդկանց");
+		
+
+Որոնում և փոխարինում
+
+replace()
+
+
+var str="Ես գրում եմ andur translitov!"
+
+var n=str.replace("andur translitov","Նորմալ հայատառ հայերենով");
+
+Տողերի մեծատառ և փոքրատառ ռեգիստրի փոխակերպում
+
+toUpperCase() և toLowerCase()
+
+
+var a = new String("փոքրատառերով գրված տեքստ");
+
+var a1 = a.toUpperCase();
+
+var b = new String("ՄԵԾԱՏԱՌԵՐՈՎ ԳՐՎԱԾ ՏԵՔՍՏ");
+
+var b1 = b.toLowerCase();
+
+Բացատների հեռացում
+
+trim()
+
+
+var str = new String(" այստեղ սկզբից և վերջից կա բացատ ");
+
+var str = str.trim();
+
+var str1 = new String("    մի քանի բացատներ    ");
+
+var str1 = str1.trim();
+
+		
+
+Տողերի կտրատման եղանակներ
+Տողը դարձնել զանգված
+
+split()
+
+
+var a = new String("կով փիղ ոչխար ավանակ բեգեմոտ");
+
+var animals = a.split(" ");
+
+var b = new String("html,css,javascript,mysql,php,");
+
+var tech = b.split(",");
+		
+
+Ենթատողեր
+
+substr() և substring()
+
+
+
+var str = "Բարև աշխարհ";
+
+var res = str.substr(1,3); //սկիզբ, երկարություն			
+
+var str = "Բարև աշխարհ!";
+
+var res = str.substring(5,11); //երկու ինդեքս
+
+		
+
+Date օբյեկտը
+
+Աշխատանք ժամանակի հետ
+
+
+//Կոնստրուկտորներ				
+var d = new Date(); 	       // ներկան
+
+var d = new Date(milliseconds); //միլիվարկյաններ սկսած 1970/01/01
+
+var d = new Date(dateString);   // '2012-05-06'
+
+var d = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+			
+
+
+//Օրինակներ				
+var now = new Date();
+
+var d1 = new Date("October 13, 1975 11:13:00");
+
+var d2 = new Date(79,5,24);
+
+var d3 = new Date(79,5,24,11,33,0);
+			
+
+Date օբյեկտի getter հատկությունները
+
+
+var now = new Date();
+var date = now.getDate(); //ամսվա օրը
+var day = now.getDay();  //շաբաթվա օրը (0-6)
+var year = now.getFullYear(); //տարին , քառանիշ
+var month = now.getMonth(); //ամիսը (0-11)
+var hour = now.getHours(); //ժամերը (0-23)
+var minutes = now.getMinutes(); //վարկյանները (0-59)
+//....
+		
+
+setTimeout, setInterval
+
+հետաձգված կատարում և պարբերական կատարումներ
+
+setTimeout()
+
+
+			setTimeout('alert("kuku")', 1000);
+			
+			//կամ
+			
+			setTimeout('function1()', 1000);
+			
+			function function1(){
+			//անում է որևէ բան
+		}
+		
+
+Array օբյեկտը
+
+Աշխատանք զանգվածների՝ որպես օբյեկտների հետ
+
+Զանգվածների կարևորագույն մեթոդները
+Տվյալների վալիդացում
+
+Տվյալների վալիդացումը ունի երկու փուլ
+
+
+    Վալիդացում բռաուզեռի մակարդակի վրա
+    Վալիդացում սերվերի մակարդակի վրա
+
+
+Ջավասքրիփթով անում ենք վալիդացում բռաուզեռի մակարդակի վրա
+document.forms
+Javascript
+
+
+function validateForm()
+{
+var x=document.forms["Form1"]["FirstName"].value;
+if (x==null || x=="")
+  {
+  alert("Անունը պիտի լրացվի");
+  return false;
+  }
+}
+		
+
+HTML
+
+
+<form name="Form1" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+Անուն: <input name="FirstName" type="text">
+<input value="Ուղարկել" type="submit">
+</form>
+HTML,CSS, Javascript դասընթացի համար
+Number օբյեկտի որոշ մեթոդները
+
+    toExponential(x)
+    toFixed(x)
+    toPrecision(x)
+    toString()
+
+			
+
+var a = new Number(45.3569);
+
+var b = a.toExponential(); //b=4.53569e+1
+
+var c = a.toFixed(3);	  //c=45.357
+
+var d = a.toPrecision(2);	 //d=45.35
+
+var e = a.toString();		//թիվը դարձնում է տող
+
+			
+
+		
+
+NaN
+Մեկ այլ որոնվման տեսակ
+
+match()
+
+
+
+var str="Ուղեղը գտնվում է մարդկանց գանգի մեջ․ որոշ մարդականց!";
+
+var str1 = str.match("մարդկանց");
+
+var str2 = str.match("մրդկանց");
+		
+
+Որոնում և փոխարինում
+
+replace()
+
+
+var str="Ես գրում եմ andur translitov!"
+
+var n=str.replace("andur translitov","Նորմալ հայատառ հայերենով");
+
+Տողերի մեծատառ և փոքրատառ ռեգիստրի փոխակերպում
+
+toUpperCase() և toLowerCase()
+
+
+var a = new String("փոքրատառերով գրված տեքստ");
+
+var a1 = a.toUpperCase();
+
+var b = new String("ՄԵԾԱՏԱՌԵՐՈՎ ԳՐՎԱԾ ՏԵՔՍՏ");
+
+var b1 = b.toLowerCase();
+
+Բացատների հեռացում
+
+trim()
+
+
+var str = new String(" այստեղ սկզբից և վերջից կա բացատ ");
+
+var str = str.trim();
+
+var str1 = new String("    մի քանի բացատներ    ");
+
+var str1 = str1.trim();
+
+		
+
+Տողերի կտրատման եղանակներ
+Տողը դարձնել զանգված
+
+split()
+
+
+var a = new String("կով փիղ ոչխար ավանակ բեգեմոտ");
+
+var animals = a.split(" ");
+
+var b = new String("html,css,javascript,mysql,php,");
+
+var tech = b.split(",");
+		
+
+Ենթատողեր
+
+substr() և substring()
+
+
+
+var str = "Բարև աշխարհ";
+
+var res = str.substr(1,3); //սկիզբ, երկարություն			
+
+var str = "Բարև աշխարհ!";
+
+var res = str.substring(5,11); //երկու ինդեքս
+
+		
+
+Date օբյեկտը
+
+Աշխատանք ժամանակի հետ
+
+
+//Կոնստրուկտորներ				
+var d = new Date(); 	       // ներկան
+
+var d = new Date(milliseconds); //միլիվարկյաններ սկսած 1970/01/01
+
+var d = new Date(dateString);   // '2012-05-06'
+
+var d = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+			
+
+
+//Օրինակներ				
+var now = new Date();
+
+var d1 = new Date("October 13, 1975 11:13:00");
+
+var d2 = new Date(79,5,24);
+
+var d3 = new Date(79,5,24,11,33,0);
+			
+
+Date օբյեկտի getter հատկությունները
+
+
+var now = new Date();
+var date = now.getDate(); //ամսվա օրը
+var day = now.getDay();  //շաբաթվա օրը (0-6)
+var year = now.getFullYear(); //տարին , քառանիշ
+var month = now.getMonth(); //ամիսը (0-11)
+var hour = now.getHours(); //ժամերը (0-23)
+var minutes = now.getMinutes(); //վարկյանները (0-59)
+//....
+		
+
+setTimeout, setInterval
+
+հետաձգված կատարում և պարբերական կատարումներ
+
+setTimeout()
+
+
+			setTimeout('alert("kuku")', 1000);
+			
+			//կամ
+			
+			setTimeout('function1()', 1000);
+			
+			function function1(){
+			//անում է որևէ բան
+	}
+		
+<form name="Form1" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+Անուն: <input name="FirstName" type="text">
+<input value="Ուղարկել" type="submit">
+</form>
+		
+
+Անուն:
+
+
+
+</script>
+
+</body>
+</html>
+</html>

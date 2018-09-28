@@ -1,0 +1,476 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pagination</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co"/>
+    <meta name="keywords"
+          content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive"/>
+    <meta name="author" content="FreeHTML5.co"/>
+
+    <!--
+    //////////////////////////////////////////////////////
+
+    FREE HTML5 TEMPLATE
+    DESIGNED & DEVELOPED by FreeHTML5.co
+
+    Website: 		http://freehtml5.co/
+    Email: 			info@freehtml5.co
+    Twitter: 		http://twitter.com/fh5co
+    Facebook: 		https://www.facebook.com/fh5co
+
+    //////////////////////////////////////////////////////
+     -->
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:image" content=""/>
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:card" content=""/>
+
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
+          type='text/css'>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body ng-app="myApp">
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <nav class="fh5co-nav" role="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div id="fh5co-logo"><a href="index.html">Shopping<span>.</span></a></div>
+                </div>
+                <div class="col-xs-12 text-center menu-1">
+                    <ul>
+                        <li class="active"><a href="#!home">Home</a></li>
+                        <li class="has-dropdown">
+                            <ul class="dropdown">
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">eCommerce</a></li>
+                                <li><a href="#">Branding</a></li>
+                                <li><a href="#">API</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#!restaurant">restaurant</a></li>
+                        <li><a href="#!companies">companies</a></li>
+                        <li><a href="#!products">products</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0 text-center">
+                    <div class="display-t">
+                        <div class="display-tc animate-box" data-animate-effect="fadeInUp">
+                            <h1 class="mb30">Never Stop Exploring.</h1>
+
+                            <p>
+                                <a href="http://freehtml5.co/" target="_blank" class="btn btn-primary">Download</a> or
+                                <a href="https://vimeo.com/channels/staffpicks/93951774" class="link-watch popup-vimeo">Watch
+                                    Video</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="text-align: center">
+                <ng-view></ng-view>
+            </div>
+        </div>
+    </div>
+
+    <div id="fh5co-testimonial" class="fh5co-bg-section">
+        <div class="container">
+            <div class="row animate-box row-pb-md">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <span>You deserved happiness</span>
+                    <h2>Happy Clients</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 animate-box">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>&ldquo;Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.&rdquo;</p>
+                            <p class="author"> <img src="images/person1.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"> <cite>&mdash; Mike Adam</cite></p>
+                        </blockquote>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>&ldquo;Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius. Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.&rdquo;</p>
+                            <p class="author"><img src="images/person2.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"> <cite>&mdash; Eric Miller</cite></p>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col-md-6 animate-box">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>&ldquo;Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius. Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.&rdquo;</p>
+                            <p class="author"><img src="images/person3.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"> <cite>&mdash; Eric Miller</cite></p>
+                        </blockquote>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>&ldquo;Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.&rdquo;</p>
+                            <p class="author"><img src="images/person1.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"> <cite>&mdash; Mike Adam</cite></p>
+                        </blockquote>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="fh5co-started">
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <span>Let's work together</span>
+                    <h2>Start Your Project</h2>
+                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                    <p><button type="submit" class="btn btn-default">Get In Touch</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="fh5co-footer" role="contentinfo">
+        <div class="container">
+            <div class="row row-pb-md">
+                <div class="col-md-4 fh5co-widget ">
+                    <h3>Shape.</h3>
+                    <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta
+                        adipisci architecto culpa amet.</p>
+                    <p><a href="#">Learn More</a></p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
+                    <ul class="fh5co-footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Meetups</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
+                    <ul class="fh5co-footer-links">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Handbook</a></li>
+                        <li><a href="#">Held Desk</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
+                    <ul class="fh5co-footer-links">
+                        <li><a href="#">Find Designers</a></li>
+                        <li><a href="#">Find Developers</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row copyright">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
+                        <small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a>
+                            Demo Images: <a href="http://pixeden.com/" target="_blank">Pixeden</a> &amp; <a
+                                    href="http://unsplash.com/" target="_blank">Unsplash</a></small>
+                    </p>
+                    <p>
+                    <ul class="fh5co-social-icons">
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+
+<script>
+    var app = angular.module("myApp", ["ngRoute"]);
+    app.config(function($routeProvider) {
+        $routeProvider
+            .when("/", {
+                templateUrl : "home.html"
+            })
+
+            .when("/products", {
+                templateUrl : "products.html"
+            })
+            .when("/companies", {
+                templateUrl : "companies.html"
+            })
+            .when("/blog", {
+                templateUrl : "restaurant.html"
+            })
+
+    });
+</script>
+
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS Pagination</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .container {
+            margin-top: 20px;
+        }
+        .pagination {
+            display: inline-block;
+        }
+        .pagination:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        .pagination li {
+            cursor: pointer;
+        }
+        .pagination-wrap {
+            text-align: center;
+        }
+        img {
+            width: 230px;
+            height: 230px;
+        }
+        li {
+            list-style: none;
+        }
+    </style>
+
+    <script src="angular.min.js"></script>
+
+    <script>
+        var app = angular.module( 'app', [ ] )
+
+            .factory('pagination', function( $sce ) {
+
+                var currentPage = 0;
+                var itemsPerPage = 5;
+                var restaurant = [];
+
+                return {
+
+                    setProducts: function( newProducts ) {
+                        restaurant = newProducts
+                    }, /* END of setProducts */
+
+                    getPageProducts: function(num) {
+                        var num = angular.isUndefined(num) ? 0 : num;
+                        var first = itemsPerPage * num;
+                        var last = first + itemsPerPage;
+                        currentPage = num;
+                        last = last > restaurant.length ? (restaurant.length - 1) : last;
+                        return restaurant.slice(first, last);
+                    }, /* END of getPageProducts */
+
+                    getTotalPagesNum: function() {
+                        return Math.ceil( restaurant.length / itemsPerPage );
+                    }, /* END of getTotalPagesNum */
+
+                    getPaginationList: function() {
+                        var pagesNum = this.getTotalPagesNum();
+                        var paginationList = [];
+                        paginationList.push({
+                            name: $sce.trustAsHtml('&laquo;'),
+                            link: 'prev'
+                        });
+                        for (var i = 0; i < pagesNum; i++) {
+                            var name = i + 1;
+                            paginationList.push({
+                                name: $sce.trustAsHtml( String(name) ),
+                                link: i
+                            });
+                        };
+                        paginationList.push({
+                            name: $sce.trustAsHtml('&raquo;'),
+                            link: 'next'
+                        });
+                        if (pagesNum > 2) {
+                            return paginationList;
+                        } else {
+                            return null;
+                        }
+                    }, /* END of getPaginationList */
+
+                    getPrevPageProducts: function() {
+                        var prevPageNum = currentPage - 1;
+                        if ( prevPageNum < 0 ) prevPageNum = 0;
+                        return this.getPageProducts( prevPageNum );
+                    }, /* END of getPrevPageProducts */
+
+                    getNextPageProducts: function() {
+                        var nextPageNum = currentPage + 1;
+                        var pagesNum = this.getTotalPagesNum();
+                        if ( nextPageNum >= pagesNum ) nextPageNum = pagesNum - 1;
+                        return this.getPageProducts( nextPageNum );
+                    }, /* END of getNextPageProducts */
+
+                    getCurrentPageNum: function() {
+                        return currentPage;
+                    }, /* END of getCurrentPageNum */
+
+                }
+            }) /* END of factory-pagination */
+
+            .controller('mainCtrl', function( $scope, $http, pagination ){
+
+                $http.get('./restaurant.json')
+                    .success(function(data){
+                        $scope.menuObj = data;
+                        pagination.setProducts( data.restaurant);
+                        $scope.restaurant = pagination.getPageProducts( $scope.currentPage );
+                        $scope.paginationList = pagination.getPaginationList();
+                    });
+
+                $scope.showPage = function(page) {
+                    if ( page == 'prev' ) {
+                        $scope.restaurant = pagination.getPrevPageProducts();
+                    } else if ( page == 'next' ) {
+                        $scope.restaurant = pagination.getNextPageProducts();
+                    } else {
+                        $scope.restaurant = pagination.getPageProducts( page );
+                    }
+                }
+
+                $scope.currentPageNum = function() {
+                    return pagination.getCurrentPageNum();
+                }
+                $scope.f = function(URL,name,_id,type_of_food,outcode,postcode,rating) {
+                    document.write(URL+"<br>"+name+"<br>"+_id+"<br>"+type_of_food+"<br>"+outcode+"<br>"+postcode+"<br>"+rating);
+                }
+
+            })
+    </script>
+</head>
+<div class="container">
+    <div ng-repeat="item in restourant" ng-click="f(item.URL,item.name,item._id,item.rating,item.type_of_food,item.outcode,item.postcode)" class="col-sm-3">
+        <div class="thumbnail">
+            <div class="caption">
+                <h1>{{item.name}}</h1>
+                {{item.URL}}
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="pagination-wrap">
+    <ul class="pagination">
+        <li ng-repeat="page in paginationList" ng-click="showPage(page.link)" ng-class="{'active': currentPageNum() == page.link}"><a ng-bind-html="page.name"></a></li>
+    </ul>
+</div>
+
+</div>
+
+
+</body>
+</html>

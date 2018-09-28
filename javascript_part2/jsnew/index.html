@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand:700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="mec">
+        <div class="add">
+
+            <h2> Task Manager</h2>
+            <div class=" mij">
+            <div class="addtask">
+                <label >Add task </label><br><br>
+                <input type="text" name="title" maxlength="40" autofocus>
+            </div>
+            <br>
+            <div>
+                <lable>Description </lable><br>
+                <textarea name="descr" rows="4" cols="30" maxlength="200"></textarea>
+            </div><br>
+            <div>
+                <lable>Deadline </lable><br><input type="datetime-local" name="date">
+            </div>
+            <br>
+            <div class="but">
+                <button id="add">Add list</button>
+            </div>
+        </div>
+      </div>
+        <div id="waiting"><h2>Create new list</h2></div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

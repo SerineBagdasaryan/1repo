@@ -1,0 +1,147 @@
+body{
+    background-color: black;
+}
+.full_width{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.text_bott{
+    color: rgb(255,236,168);
+    display: flex;
+
+}
+.ok{
+    padding: 30px 180px;
+	transform: translateY(65px);
+}
+.ff{
+    width: 445px;
+    text-align: center;
+    font-size: 43px;
+}
+.nkar1{
+    position: relative;
+    z-index: 2;
+}
+.nkar2{
+    position: absolute;
+    top: 15%;
+    left: 48px;
+}
+.div1{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.div2{
+    background: url("fu.png")no-repeat;
+    background-size: 100% 270px;
+    background-position: center;
+}
+.ull ul li{
+    padding-top: 25px;
+    text-align: right;
+    list-style-type: none;
+	  list-style-image: url("sl.png");
+}
+
+.ull ul li a{
+    color: rgb(255,236,168);
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+
+.ull ul li a{
+    color: rgb(255,236,168);
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+	justify-content:center;
+}
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+}
+.text_wel{
+    color: rgb(255,236,168);
+}
+p{
+    color: white;
+	
+}
+span{
+    color: rgb(202,117,24);
+}
+.list ul li a{
+    color: white;
+}
+.list ul li {
+    list-style-image: url("sql.jpg");
+}
+.foot{
+    display: flex;
+    align-items: center;
+}
+.foot div{
+    width: 20%;
+	text-align:center;
+}
+
+.ramka{
+    position: relative;
+    z-index: 2;
+}
+.nkar{
+    position: absolute;
+    top: 15%;
+    left: 48px;
+}
+.div1{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.div2{
+    background: url("fu.png")no-repeat;
+    background-size: 100% 270px;
+    background-position: center;
+}
+.ull ul li{
+    padding-top: 25px;
+    text-align: right;
+    list-style-type: none;
+}
+h3{
+    color: rgb(255,236,168);
+}
+h3{
+    color: rgb(255,236,168);
+}
+
+.cn{
+	width:1000px;
+	height:25%;
+	 background-color:#633517;
+	 text-align:center;
+	
+	}
+
+h5{
+	color:white;
+}
+.hhh p{
+	 text-decoration:underline; 
+}
+
+.ggg p{
+	 text-decoration:underline; 
+}
+.lll{	 
+    border: 1px solid #633517;
+}
+
+

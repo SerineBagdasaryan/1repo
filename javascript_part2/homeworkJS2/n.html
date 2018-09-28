@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>First site</title>
+</head>
+
+<body>
+<form>
+
+firstName:<input type="text" id="name" value =""><br>
+lastName:<input type="text" id="lastName" value=""> <br>
+age:<input type="number" id="age" value=""><br>
+<button onclick = "myFunction()" type='button'>Try it</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+</form>
+
+<script>
+var person ={}
+function myFunction(){
+person.fname = document.getElementById("name").value;
+person.lastName = document.getElementById("lastName").value;
+person.age = document.getElementById("age").value;
+document.getElementById('demo').innerHTML=person.fname;
+document.getElementById('demo1').innerHTML=person.lastname;
+document.getElementById('demo2').innerHTML=person.age;
+
+ 
+
+
+console.log(person)
+}
+
+/*
+var person ={
+firstName : "Ani",
+lastName : "Avetisyan",
+age : 25,
+eyeColor : "blue",
+fullName : function() {
+return this.firstName + " " + this.lastName+"is " + this.age + "years old" ;
+}
+}
+document.write(person.fullName());*/
+
+ 
+
+ 
+
+</script>
+
+</body>
+</html>

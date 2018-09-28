@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> rex</title>
+</head>
+<body>
+<script>
+//alert(document.title);
+var body = document.getElementsByTagName("body");
+
+body.addEventListener("load", myFunction(),false);
+
+function myFunction(){
+var div = document.createElement("div");
+div.style.width="200px";
+div.style.height="200px";
+div.style.backgroundColor="blue";
+div.style.border="solid 1px black";
+div.id="id1";
+
+	var d  = document.getElementsByTagName("body")[0].appendChild(div)
+	function createButton() {
+	    var btn = document.createElement("BUTTON");
+	    var t = document.createTextNode("CLICK ME");
+   		 btn.appendChild(t);
+   		 document.body.appendChild(btn);
+	    btn.id = "button";
+	} createButton();
+	}
+</script>
+</body>
+</html>

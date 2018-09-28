@@ -1,0 +1,36 @@
+<div class="row dives_body" ng-app="myApp" ng-controller="ProductsCtrl">
+    <div id="{{product._id | isObj}}" class="col-md-4 text-center" ng-repeat="product in dataProducts">
+        <ul>
+            <li><a href=""  target="_blank" alt='Page does not a fount' ng-click="showHide(product.name)">Name: {{product.name}}</a></li>
+            <img ng-style="firstProductImg" src="{{product.main_picture}}" alt="Image does not found">
+            <li>Type: {{product.type | isArray}}</li>
+            <li>Price: {{product.price | currency}}</li>
+        </ul>
+    </div>
+
+
+    <div class="col-md-12 text-center"  ng-repeat="product in dataProducts" ng-show="productDetailId == product.name">
+        <ul>
+            <li><h1>{{product._id | isObj}}</h1></li>
+            <li class=" mt-5"><h1><a href='#' alt='Page does not a fount' >{{product.name}}</a></h1></li>
+            <li><h1>{{product.type | isArray}}</h1></li>
+            <li><h1>{{product.brand}}</h1></li>
+            <li><h1>{{product.color}}</h1></li>
+            <li><h1>{{product.sales_tax}}</h1></li>
+            <li><h1>{{product.term_years}}</h1></li>
+            <li><h1>{{product.amount}}</h1></li>
+            <li><h1>{{product.kind}}</h1></li>
+            <li><h1>{{product.monthly_price}}</h1></li>
+            <li><h1>{{product.available}}</h1></li>
+            <li><h1>{{product.warranty_years}}</h1></li>
+            <img ng-style="secondProductImg" src="{{product.main_picture}}" alt="Image does not found">
+            <li><h1>{{product.price | currency}}</h1></li>
+        </ul>
+    </div>
+
+    <div data-pagination="" data-num-pages="numPages()"
+          data-current-page="currentPage" data-max-size="maxSize"
+          data-boundary-links="true">
+    </div>
+
+</div>

@@ -1,0 +1,66 @@
+
+<html>
+<head>
+</head>
+<body>
+<script>
+// var userInfo = {
+// user: "Tony",
+// city: "New York",
+// password: "sdcs",
+// role:"user"
+
+// };
+
+
+// userInfo.zip = "521";
+// userInfo.user="admin";
+
+// console.log(userInfo);
+
+// Object.defineProperty(userInfo, "user",{
+// enumerable:false,
+// configurable:true,
+// writable:true,
+// });
+
+// userInfo.user="Haso";
+// // Object.defineProperty(userInfo, "zip",{
+// // value: "5365635",
+// // enumerable: true
+
+// // })
+// // console.log(userInfo)
+
+// for(var i in userInfo){
+// console.log(userInfo[i]);
+// }
+
+ 
+
+ 
+
+var obj = {
+name: "Tony",
+surname:"Montana",
+age: "77",
+city: "Italy"
+};
+
+
+Object.defineProperty(obj, "fullname",{
+get: function(){
+return(this.name + " " + this.surname + ' ' + this.age)
+},
+
+set: function(str){
+str.name = this.name,
+str.surname = this.surname
+}
+});
+
+var res = obj.fullname = "Hello world";
+console.log(res);
+</script>
+</body>
+</html>

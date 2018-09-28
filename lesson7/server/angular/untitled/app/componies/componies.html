@@ -1,0 +1,28 @@
+<div class="row dives_body" ng-app="myApp" ng-controller="ComponiesCtrl">
+    <div id="{{compony._id | isObj}}" class="col-md-4 text-center" ng-repeat="compony in dataComponies">
+        <ul>
+            <li><a href="" alt='Page does not a fount' ng-click="showHide(compony.name)">Name: {{compony.name}}</a></li>
+
+            <img ng-style="firstComponiesImg" src="{{compony.componies_picture}}" alt="Image does not found">
+
+        </ul>
+    </div>
+
+
+    <div class="col-md-12 text-center"  ng-repeat="compony in dataComponies" ng-show="componyDetailId == compony.name">
+        <ul>
+            <li>Id: {{compony._id | isObj}}</li>
+            <img ng-style="secondComponiesImg" src="{{compony.componies_picture}}" alt="Image does not found">
+            <li><a href="#" alt='Page does not a fount'>Name: {{compony.name}}</a></li>
+            <li>.Permalink: {{compony.permalink}}</li>
+            <li>Crunchbase url: {{compony.crunchbase_url}}</li>
+            <li>Homepage url: {{compony.homepage_url}}</li>
+        </ul>
+    </div>
+
+    <div data-pagination="" data-num-pages="numPages()"
+          data-current-page="currentPage" data-max-size="maxSize"
+          data-boundary-links="true">
+    </div>
+
+</div>

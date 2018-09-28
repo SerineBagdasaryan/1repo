@@ -1,0 +1,68 @@
+<html>
+    <head>
+    </head>
+	<body>
+	<div style='color:red; margin:20px'></div>
+			<style>
+				div{
+					width: 700px;
+					height: 200px;
+					color: white;
+	
+				}
+			</style>
+		<script>
+		/*var firstname = "Valod";
+			var person = {
+				firstname: "Hrant",
+				age: 22,
+				showName: function(){
+					return "His name is" + this.firstname;
+				}
+			};
+			document.write(person.showName());
+			person.firstname = "Gurgen";
+			//alert(person.firstname);
+			//alert(person["firstname"]);
+			console.log(person);
+			
+			for(k in person){
+				console.log(k);
+				console.log(person[k]);
+			}*/
+			
+			
+			var car = {
+				bantaj : 40,
+				color : "black",
+				brand : "BMW",
+				owner : "Vardan",
+				windows : "dark",
+				wheel: 4,
+				oil : "Mobile",
+				name: "Buyan"
+			}
+			var html = "";
+			for(prop in car){
+				if(prop == "color"){
+					html += "<div style='background-color:" +car[prop]+";font-size:"+car.bantaj+"px'>";
+				}else if(prop == "wheel"){
+					for(var i = 0; i < car[prop]; i++){
+						html += " O ";
+					}
+				}
+			}
+			html += car.owner +" - " + car.brand + "/"+ car.name;
+			html += "</div>";
+			document.write(html);
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+

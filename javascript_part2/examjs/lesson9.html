@@ -1,0 +1,46 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<p id = "demo"></p>
+		<input type = "text" onchange= "alert(this.value)">
+		<select>
+			<option>Shirak</option>
+			<option>Lori</option>
+			<option>Tavush</option>
+			<option>Aragatsotn</option>
+			<option>Syunik</option>
+		</select>
+		<button  >Click here</button>
+		<script>	
+			function makeStrUpper(str){
+			//1.divide str into arr
+				var new_str = str.split(" ");
+			//2.access to arr elements
+	
+				for(var i = 0; i < new_str.length; i++){
+				
+					new_str[i] = new_str[i].charAt(0).toUpperCase() + new_str[i].substr(1);
+					
+				}	
+				//new_str.join(" ");
+				//document.getElementById("demo").innerHTML =  new_str.join(" ");
+				return new_str.join(" ");
+			}
+			
+			function showText(string){
+				document.getElementById("demo").innerHTML = 
+			    makeStrUpper(string);
+			}
+	
+		
+		
+		
+		
+		
+		
+		
+		</script>
+	</body>
+</html>
+	

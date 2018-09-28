@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script type = "text/javascript">
+function choose(s1,s2){
+var s1 = document.getElementById(s1);
+var s2 = document.getElementById(s2);
+s2.innerHTML = "";
+if(s1.value == "Արագածոտն"){
+var optionArray = ["|","cities/ashtarak.html|Աշտարակ","cities/aparan.html|Ապարան","cities/talin.html|Թալին"]
+}else if(s1.value == "Արարատ"){
+var optionArray = ["|","cities/ararat.html|Արարատ","cities/artashat.html|Արտաշատ","cities/masis.html|Մասիս","cities/vedi.html|Վեդի"]
+}else if(s1.value == "Արմավիր"){
+var optionArray = ["|","cities/armavir.html|Արմավիր","cities/metsamor.html|Մեծամոր","cities/ejmiatsin.html|Էջմիածին"]
+}else if(s1.value == "Գեղարքունիք"){
+var optionArray = ["|","cities/gavar.html|Գավառ","cities/chambarak.html|Ճամբարակ","cities/martuni.html|Մարտունի","cities/sevan.html|Սևան","cities/vardenis.html|Վարդենիս"]
+}else if(s1.value == "Լոռի"){
+var optionArray = ["|","cities/alaverdi.html|Ալավերդի","cities/akhtala.html|Ախթալա","cities/tumanyan.html|Թումանյան","cities/shamlugh.html|Շամլուղ","cities/spitak.html|Սպիտակ","cities/stepanavan.html|Ստեփանավան","cities/vanadzor.html|Վանաձոր",]
+}else if(s1.value == "Կոտայք"){
+var optionArray = ["|","cities/abovyan.html|Աբովյան","cities/byureghavan.html|Բյուրեղավան","cities/eghvard.html|Եղվարդ","cities/tsaghkadzor.html|Ծաղկաձոր","cities/hrazdan.html|Հրազդան","cities/norhachn.html|Նոր Հաճն","cities/charentsavan.html|Չարենցավան"]
+}else if(s1.value == "Շիրակ"){
+var optionArray = ["|","cities/artik.html|Արթիկ","cities/gyumri.html|Գյումրի","cities/maralik.html|Մարալիկ"]
+}else if(s1.value == "Սյունիք"){
+var optionArray = ["|","cities/goris.html|Գորիս","cities/dastakert.html|Դաստակերտ","cities/kapan.html|Կապան","cities/meghri.html|Մեղրի","cities/sisian.html|Սիսիան","cities/qajaran.html|Քաջարան"]
+}else if(s1.value == "Վայոց Ձոր"){
+var optionArray = ["|","cities/eghegnadzor.html|Եղեգնաձոր","cities/jermuk.html|Ջերմուկ","cities/vayq.html|Վայք"]
+}else if(s1.value == "Տավուշ"){
+var optionArray = ["|","cities/berd.html|Բերդ","cities/dilijan.html|Դիլիջան","cities/ijevan.html|Իջևան","cities/noyemberyan.html|Նոյեմբերյան","cities/tashir.html|Տաշիր"]
+}
+
+
+
+for(var option in optionArray){
+var pair = optionArray[option].split("|");
+var newOption = document.createElement("option");
+newOption.value = pair[0];
+newOption.innerHTML = pair[1];
+s2.options.add(newOption);
+}
+}
+</script>
+<style type="text/css">
+<!--
+.style1 {
+font-size: 65px;
+color: #0099CC;
+}
+-->
+</style>
+</head>
+<body>
+<h2>Ծանոթություն ՀՀ մարզերին և քաղաքներին</h2>
+<hr />
+Ընտրեք Մարզը:
+<select id="region" name="region" onChange="choose(this.id,'city')" target="newframe">
+<option value=""></option>
+<option value="Արագածոտն">Արագածոտն</option>
+<option value="Արարատ">Արարատ</option>
+<option value="Արմավիր">Արմավիր</option>
+<option value="Գեղարքունիք">Գեղարքունիք</option>
+<option value="Լոռի">Լոռի</option>
+<option value="Կոտայք">Կոտայք</option>
+<option value="Շիրակ">Շիրակ</option>
+<option value="Սյունիք">Սյունիք</option>
+<option value="Վայոց Ձոր">Վայոց Ձոր</option>
+<option value="Տավուշ">Տավուշ</option>
+</select>
+<hr />
+Ընտրեք Քաղաքը:
+<select id="city" name="city" onChange="location.href=this.value"></select>
+<hr />
+<table width="100%" height="175" border="0">
+<tr>
+<td align="center" valign="top"><div align="center">
+
+</div></td>
+</tr>
+</table>
+<table width="100%" border="0">
+<tr>
+<td align="center" valign="top" bordercolor="#CCCCCC" bgcolor="#CCCCCC"><div align="center"><strong>ՀԱՋՈՐԴ ԱՌԱՋԱԴՐԱՆՔԸ<a href="../task1/lesson10.html"> ----&gt;</a> </strong></div></td>
+</tr>
+</table>
+</body>
+</html>

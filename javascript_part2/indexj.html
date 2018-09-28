@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Task</title>
+</head>
+<body>
+<script>
+//ETE SAYHI() KANCHENQ VEREV@ ERROR KUDA,BAYC FUNCTION DECLARATION VEREV@ KANCHELUC ERROR CHI TA
+//////////////////////////sayHi();//ERROR KUDA
+//var sayHi = function () {
+ // alert("Hello!");
+//};
+ 
+//sayHi();
+////////////////////////FUNCTION
+/*
+function total(num) {
+var sum = 0;
+for(var i = 1; i <= num; i++){
+if(i%2!==0){
+sum+=i;
+}
+}
+return sum;
+}
+console.log(total(150));*/
+////////////////////////////////kent tver
+/*function kent(num){
+for (var i=0;i<num;i++){
+//if(i%2==0)continue;
+//console.log(i);
+ if (i % 2) {
+    console.log( i );
+  }
+}
+}
+kent(150);*/
+
+///////////////////////////////////////     MAX
+/*var arr = [5,78,2,34,5,120,57,96,9];
+function func(){
+ var max = arr[0];
+ for(var i = 0;i<arr.length;i++){
+ if(max<arr[i]){
+ max=arr[i];
+}
+}  
+return max;
+} 
+document.write(func());
+*/
+
+/////////////////////////////////////////MIN
+/*var array=[35,5,7,12,34,2,668,43];
+function min(){
+var min=array[0];
+for(var i=array.length-1; i>0; i--){
+if(min>array[i]){
+min=array[i];
+}
+}
+return min;
+}
+document.write(min());*/
+/*function even(n){/////////////////  MY FUNCTION////IM GRAC
+for(var i=1;i<=n;i+=2){
+document.write(i+"<br>");
+}
+}
+even(20);
+
+function odd(n){
+for(var i=2;i<=n;i+=2){
+document.write(i+"<br>");
+}
+}
+odd(20);*/
+//////////////////////////////////        MIN 
+/*var arr = [6,8,9,10,5,4]
+function max(){
+var first = arr[0]
+for (var i=1; i<arr.length;i++){
+if(first< arr[i]){
+first = arr[i];
+}
+}
+return first;
+}
+console.log(max());*/
+
+///////////////////////////FACTORIAL
+/*function fact(n){
+var a=1;
+for(var i=1; i<=n; i++){
+a*=i;
+}
+return a;
+}document.write(fact(5));
+
+function fuc(n){
+if(n==0 || n==1){
+return 1;
+}
+else{
+return n*fuc(n-1);
+}
+}
+document.write(fuc(5));*/
+/*function tiv(num){
+if(num%2==0){
+return true;
+}else{
+return false;
+}
+} console.log(tiv(28)); */
+//////////////////////OBJECT
+
+/*var person={
+firstName: "Mariam",
+lastName: "Bagdasaryan",
+eyeColor:"blue",
+prof: "doctor",
+age:21,
+fullName:function(){
+return this.firstName + " " + this.lastName + " " + this.eyeColor + " " +  this.prof + " " + this.age; 
+}
+}
+console.log(person.fullName());*/
+
+////////////////////////////////ARRAY
+
+/*var p_lang=["Java script", "Java", "Php","Python","Perl","C++", "C", "Ruby"];
+for(var i = 0; i < p_lang.length; i++) {
+	document.write(p_lang[i] + "<br>");
+}*/
+/*for(var i=0;i<=10;i++){
+for(var j=10;j<0; j--){
+document.write("*");
+}
+}*/
+/*var a=prompt("mutq tiv");
+if(isNaN(a)){
+alert("no tiv");
+}else{
+alert("tiv");
+}*/
+/*var a=2;
+var  b=new Number(2);
+alert(typeof (a));
+alert(typeof b);
+if(a===b){
+alert("true");
+}
+else {
+alert("false");
+}*/
+
+/*function kent(num)
+{
+
+for (var i=0;i<num;i++)
+
+{
+if(i%2!==0){
+var y=i+"<br>";
+
+document.write(y);
+}
+
+}
+
+}
+
+kent(150);*/
+function isOdd(n){
+var arr=[];
+for (var i = 2; i <= n; i += 2) {
+arr.push(i);
+}
+return arr;
+}
+console.log(isOdd(16));
+
+/*var arr=[23,65,0,88678,9,3,21,776];
+function myMin(){
+var min=arr[0];
+for(var i=arr.length-1;i>1;i--){
+if(min>arr[i]){
+min=arr[i];
+}
+
+}
+return min; 
+}
+console.log(myMin());*/
+</script>
+</body>
+</html>
+

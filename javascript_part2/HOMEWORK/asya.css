@@ -1,0 +1,111 @@
+body {
+    background-color: brown;
+}
+
+#register {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    display: block;
+    margin-top: 120px;
+    box-shadow: 6px 6px #771010a1;
+}
+
+#register h2 {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#loginform {
+    display: none;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    margin-top: 120px;
+    box-shadow: 6px 6px #771010a1;
+}
+
+#loginform h2 {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.title {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+
+.title h2 {
+    text-align: center;
+    color: white;
+}
+
+.registerDiv {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 20px;
+    height: 80%;
+}
+
+.loginDiv {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 20px;
+    height: 80%;
+}
+
+.registerDiv input {
+    margin: 5px 0px;
+    width: 100%
+}
+
+.loginDiv input {
+    margin: 5px 0px;
+    width: 100%
+}
+
+.btn {
+    background-color: brown;
+    border: none;
+    height: 30px;
+    border-radius: 100px;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#userinfo {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    margin-top: 120px;
+    box-shadow: 6px 6px #771010a1;
+}
+
+#info {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+}
+
+.img {
+    height: 30%;
+    width: 60%;
+    margin: 0 auto;
+    background-image: url(img/ThankYou.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

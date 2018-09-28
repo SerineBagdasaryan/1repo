@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom-1</title>
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=deviice-width, height=deviice-height initial-scale=6.0 ">
+</head>
+<body>
+	<p id="demo"></p>
+	<form action="index.html" method="post" name="myForm">
+
+		 <input class="messageCheckbox" type="checkbox" value="3" name="mailId[]">
+		<input class="messageCheckbox" type="checkbox" value="1" name="mailId[]">
+		<h1>Menu.am</h1>
+		<div id="contaigner">
+            <div class="label">
+			     <label for=""><h3>Պիցցա</h3></label>
+            </div>
+            <div class="label">
+                <div class="pizza"><img src="images/pizza.jpg"></div>
+                <div class="pizza" id="pizza">
+                    <input type="checkbox" name="pizza" value="Սնկով պիցցա" id="mashroom"> Սնկով<br>
+                    <input type="checkbox" name="pizza" value="Բանջարեղենով պիցցա" id="vegetables"> Բանջարեղենով<br>
+                    <input type="checkbox" name="pizza" value="Պանրով պիցցա" id="cheese"> Պանրով<br>
+                    <input type="checkbox" name="pizza" value="Ձիթապտղի հատիկներով պիցցա" id="olives"> Ձիթապտղի հատիկներով<br>
+                </div>
+            </div>
+			
+			<div class="label">
+				<label for=""><h3>Հյութ</h3></label>
+			</div>
+			<div class="label">
+			<div class="juice"><img src="images/juice.jpg"></div>
+				<div class="juice">
+					<input type="checkbox" name="juice" value="Գազավորված ըմպելիք" id="limonad"> Գազավորված ըմպելիք<br>
+			  		<input type="checkbox" name="juice" value="Բնական հյութ" id="nature"> Բնական հյութ<br>
+			  		<input type="checkbox" name="juice" value="Կոմպոտ" id="juice"> Կոմպոտ<br>
+			  		<input type="checkbox" name="juice" value="Fanta" id="fanta"> Fanta<br>
+			  		<input type="checkbox" name="juice" value="Cola" id="cola"> Cola<br>
+		  		</div>
+	  		</div>
+
+            <div class="label">
+                    <label for=""><h3>Խմորեղեն</h3></label>
+            </div>
+            <div class="label">
+                <div class="cake"><img src="images/cake.jpeg"></div>
+                <div class="cake">
+                    <input type="checkbox" name="cake" value="Միկադո" id="mikado"> Միկադո<br>
+                    <input type="checkbox" name="cake" value="Մրջնի բույն" id="mrjb"> Մրջնի բույն<br>
+                    <input type="checkbox" name="cake" value="Շոկոլադով տորթ" id="cakeWithChocolate"> Շոկոլադով տորթ<br>
+                    <input type="checkbox" name="cake" value="Կեքս" id="kex"> Կեքս<br>
+                </div>
+            </div>
+  		</div>
+  		
+  		<a href="javascript:checked()" class="btn btn-danger">Պատվիրել</a>
+  		 <input type="submit" name="Submit" onclick="checked()" value="Պատվիրել">
+  		
+	</form> 
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+		
+			var fruits = ["apple", "kiwi", "mango"];
+			var x =fruits.pop();
+			fruits.pop();
+			//alert(fruits.length);
+			fruits[6] = "orange";
+			var a = fruits.push("melon");
+			//alert(a);
+		
+			//console.log(fruits);//8
+			//fruits.shift();
+			//console.log(fruits);
+			fruits.unshift("apricot");
+			document.write(fruits);
+			//alert(fruits);
+		
+			//console.log(fruits);
+			fruits.splice(2, 6, "peach", "berry");
+			//console.log(fruits);
+			var prices = [50,40,23,4];
+			var z = fruits.concat(prices, ["a", "b"]);
+			//alert(z);
+			fruits.push("cherry");
+			var t = fruits.slice(2, 5);
+			console.log(fruits);
+			console.log(t);
+			
+			var arr = [5,9,20,4,6,99];
+			var arr_str = ["afh", "gdfg", "t"];
+			alert(Math.max.apply(null, arr));
+			/*arr[2] = "kuku";
+			arr[5] = "jkghj";
+			console.log(arr);
+			var y = arr.shift();
+			alert(y);
+			var c = arr.shift();
+			alert(c);
+			console.log(arr);
+			arr[5] = null;
+			console.log(arr);*/
+			
+			
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

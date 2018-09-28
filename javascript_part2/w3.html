@@ -1,0 +1,157 @@
+<html>
+<head>
+<style>
+<!--.green{
+background: green;
+color: white;
+}-->
+</style>
+</head>
+<body>
+<!--<div id="out"></div>-->
+<div id="julo">
+Hello Nello
+</div>
+<script>
+function zamikai(){
+var div=document.getElementById("julo");
+if(div.style.visibility=="hidden"){
+return div.style.visibility="visible";
+//div.style.fontSize='200px';
+}else{
+div.style.visibility="hidden";
+div.style.fontSize='200px';
+div.style.color="purple";
+}
+}
+window.setInterval(zamikai,1500);
+
+/*document.querySelector('#out').innerHTML='<p>Hello</p>';
+document.querySelector('#out').innerHTML='Havana';
+var rex =document.createElement('P');
+P.innerHTML='hello world';
+P.classList.add('main','green');
+document.body.appendChild(p);
+console.log(rex);*/
+//function myFunction(p1,p2){
+//return p1*p2
+//}
+//alert(myFunction(3,4));
+/*var car = {
+type:"niva",
+model:"4x4",
+color:"white",
+old:"10",
+fullName:function(){
+return this.type + " " + this.model + " " + " " + this.color + " " + this.old
+}
+}; 
+document.write(car.fullName());*/
+/*
+var girl={
+name:"Mery",
+age:3,
+hair:"gnjuk",
+fullName:function(){
+return this.name + " " + this.age + " " + this.hair
+}
+};
+document.write(girl.fullName());*/
+
+/*var str="w3 very great";
+var rex=str.length;
+document.write(rex);
+var x = "We are the so-called \"Vikings\" from the north.";//"Vikings"
+document.write(x);*/
+
+//var r="abc def ghyklmno";
+//var k=r.search("def");
+//var a=
+//document.write(k);
+/*var str="we, are, the, champions ";
+var arr=str.split(", ");
+document.write(arr[2].toUpperCase());*/
+
+function my(num){
+for (var i=0;i<num;i++){
+if(i%2!==0){
+console.log(i);
+}
+}
+}
+my(20);
+
+/*
+function add(num){/////////// total
+var sum=0;
+for(var i = 4;i<=num; i++){
+sum+=i;
+
+}
+return sum;
+}
+document.write(add(106));*/
+ 
+
+/*function fib(num){/////////  fib
+if (num>2) {
+return fib(num-1) + fib(num-2);
+}else {
+return 1;
+}
+}
+document.write(fib(7));*/
+
+/*var fibonacci = function f(n) {
+  return (n > 2) ? f(n - 1) + f(n - 2) : 1;
+}
+alert( fibonacci(7) );*/
+
+
+/*var menu = {/////////hatkuttyunneri qanak@
+  width: 300,
+  height: 200,
+  title: "Menu",
+  age:100
+};
+
+var counter = 0;
+
+for (var key in menu) {
+  counter++;
+}
+
+alert( "Всего свойств: " + counter );*/
+
+
+/*var salaries = {/////// @ndhanur ashxatavarci hashvum
+  "Вася": 100,
+  "Петя": 300,
+  "Даша": 250
+};
+
+var sum = 0;
+for (var name in salaries) {
+  sum += salaries[name];
+}
+
+alert( sum );*/
+/*
+function showWarning(width, height, title, contents) {
+  width = width || 200; // если не указана width, то width = 200
+  height = height || 100; // если нет height, то height = 100
+  title = title || "Предупреждение";
+
+  //...
+} 
+alert(showWarning(200,388,'rex','tuh'));*/
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

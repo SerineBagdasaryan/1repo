@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+	<script type="text/javascript" src="script_reg.js"></script>
+		<div><h1>Գրանցում</h1>
+	<form method="post" action="index.html" name="myForm" )">
+	<span class="error"></span>
+	Անուն: <input type="text" name="name"><br/>
+	<span class="error"></span>
+	Էլ․ հասցե: <input type="email" name="email"><br/>
+	<span class="error"></span>
+	Ծածկագիր: <input type="text" name="password"><br/>
+	<span class="error"></span>
+	Կրկնեք ծածկագիրը: <input type="text" name="comfirmpassword"><br/>
+	<input class="subres" type="submit" name="submit" value="Գրանցվել" onmouseover="changeColor(this)" onmouseout="color(this)"                   onclick="validate()">
+	<input class="subres" type="reset"  name="reset"  value="Չեղարկել" onmouseover="changeColor(this)" onmouseout="color(this)">
+	</form></div>
+		
+	 <div id="container"></div>
+</body>
+</html>

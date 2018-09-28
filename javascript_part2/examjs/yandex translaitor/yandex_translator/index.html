@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yandex translator</title>
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width initial-scale=6.0 "> -->
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+	<div class="container content">
+		<p class="text-justify">Request: </p>
+		<div class="d-flex source-parent">
+			<input type="" id="source" class="form-control bx" placeholder="Search..">
+  			<button id="translate"><img src="https://png.icons8.com/ultraviolet/50/000000/search.png"></button>
+		</div>
+  		<select class="selectpicker" name="to" id="lang">
+		  	<option value="sq">Албанский</option>
+		    <option value="en">Английский</option>
+		    <option value="hy" selected="selected">Армянский</option>
+		    <option value="be">Белорусский</option>
+		    <option value="bg">Болгарский</option>
+		    <option value="hu">Венгерский</option>
+		    <option value="nl">Голландский</option>
+		    <option value="el">Греческий</option>
+		    <option value="da">Датский</option>
+		    <option value="es">Испанский</option>
+		    <option value="it">Итальянский</option>
+		    <option value="ca">Каталанский</option>
+		    <option value="lv">Латышский</option>
+		    <option value="lt">Литовский</option>
+		    <option value="mk">Македонский</option>
+		    <option value="de">Немецкий</option>
+		    <option value="no">Норвежский</option>
+		    <option value="pl">Польский</option>
+		    <option value="pt">Португальский</option>
+		    <option value="ro">Румынский</option>
+		    <option value="ru">Русский</option>
+		    <option value="sr">Сербский</option>
+		    <option value="sk">Словацкий</option>
+		    <option value="sl">Словенский</option>
+		    <option value="tr">Турецкий</option>
+		    <option value="uk">Украинский</option>
+		    <option value="fi">Финский</option>
+		    <option value="fr">Французский</option>
+		    <option value="hr">Хорватский</option>
+		    <option value="cs">Чешский</option>
+		    <option value="sv">Шведский</option>
+		    <option value="et">Эстонский</option>
+		</select>
+		<p>Answer: </p>
+		<div id="output" class="bx"></div>
+	</div>
+	<script
+	  src="http://code.jquery.com/jquery-1.12.4.js"
+	  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+	  crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

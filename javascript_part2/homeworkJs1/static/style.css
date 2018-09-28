@@ -1,0 +1,62 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+}
+#contaigner{
+	width: 160%;
+	height: 65vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: beige;
+}
+h1{
+	margin-left: 45%;
+}
+.pizza{
+	width: 300px;
+	height: 150px;
+	border: 1px solid;
+	margin-right: 70px;
+}
+.juice{
+	width: 300px;
+	height: 150px;
+	border: 1px solid;
+	margin-right: 70px;
+}
+.cake{
+	width: 300px;
+	height: 150px;
+	border: 1px solid;
+	margin-right: 70px;
+}
+img{
+	width: auto;
+	height: 150px;
+}
+.label{
+	width: 610px;
+	height: 155px;
+	display: flex;
+	flex-direction: column;
+}
+.label h3{
+	margin-top: -50px;
+	margin-left: 160%;
+}
+a {
+    width: 100vw;
+    background-color: orange;
+    color: white;
+    padding: 14px 20px;
+    margin: 45%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+a:hover {
+    background-color: brown;
+}

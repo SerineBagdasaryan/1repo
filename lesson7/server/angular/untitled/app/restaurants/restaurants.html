@@ -1,0 +1,33 @@
+<div class="row dives_body" ng-app="myApp" ng-controller="RestaurantsCtrl">
+    <div id="{{restaurant._id | isObj}}" class="col-md-4 text-center" ng-repeat="restaurant in dataRestaurants">
+        <ul>
+            <li><a href=""  target="_blank" alt='Page does not a fount' ng-click="showHide(restaurant.name)">Name: {{restaurant.name}}</a></li>
+            <img ng-style="firstRestaurantsImg" src="{{restaurant.picture}}" alt="Image does not found">
+            <li>Postcode: {{restaurant.postcode}}</li>
+            <li>Rating: {{product.rating}}</li>
+            <li>Type of food: {{product.type_of_food}}</li>
+        </ul>
+    </div>
+
+
+    <div class="col-md-12 text-center"  ng-repeat="restaurant in dataRestaurants" ng-show="restaurantDetailId == restaurant.name">
+        <ul>
+            <li><h1>{{restaurant._id | isObj}}</h1></li>
+            <li class=" mt-5"><h1><a href='#' alt='Page does not a fount' >Name: {{restaurant.name}}</a></h1></li>
+            <img ng-style="secondRestaurantsImg" src="{{restaurant.picture}}" alt="Image does not found">
+            <li>URL: {{restaurant.URL}}</li>
+            <li>Address: {{restaurant.address}}</li>
+            <li>Outcode: {{restaurant.outcode}}</li>
+            <li>Postcode: {restaurant.postcode}}</li>
+            <li>Rating: {{restaurant.rating}}</li>
+            <li>Type of food: {{restaurant.type_of_food}}</li>
+
+        </ul>
+    </div>
+
+    <div data-pagination="" data-num-pages="numPages()"
+          data-current-page="currentPage" data-max-size="maxSize"
+          data-boundary-links="true">
+    </div>
+
+</div>

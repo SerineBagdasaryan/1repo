@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation Form</title>
+	 <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form id="form1">
+      <label>Register</label>    
+	   <input type="text" id="fn" name="firstname" value="" placeholder="Firstname">
+        <input type="text" id="ln" name="lastname" value="" placeholder="Lastname">
+        <input type="text" id="ph" name="phone" value="" placeholder="Phone">
+        <input type="email" id="em" name="email" value="" placeholder="Email">
+        <input type="text" id="lg" name="login" value="" placeholder="Login">
+        <input type="password" id="psw" name="password" value="" placeholder="Password">
+        <input type="button" onclick = "setUserData()" value="Click">
+    </form>
+
+    <form id="form2">
+	<label>Login</label>
+        <input type="text" id="log" name="login" value="" placeholder="Login">
+        <input type="password" id="pswd" name="password" value="" placeholder="Passwordl">
+
+        <input type="button" onclick="loginData()" value="Click me">
+
+    </form>
+
+    <div id="info">
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	</div>
+   
+</body>
+</html>

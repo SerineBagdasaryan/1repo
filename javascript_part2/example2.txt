@@ -1,0 +1,24 @@
+
+
+
+function addClass(obj, cls) {
+   var classes = obj.className ?  obj.className.split(" ") : [];
+   for(var i = 0; i < classes.length; i++){
+       if(classes[i] == cls) return;
+   }
+   classes.push(cls);
+
+    obj.className = classes.join(" ");
+}
+
+
+var obj = {
+    className: 'open menu'
+};
+
+
+addClass(obj, "name3");
+addClass(obj, "name1");
+addClass(obj, "name2");
+
+console.log(obj.className);

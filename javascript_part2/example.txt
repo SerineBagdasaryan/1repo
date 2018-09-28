@@ -1,0 +1,12 @@
+var arr = ["name", "surname", "lastname"];
+
+var each = function (arr, callback) {
+    var i;
+    for(i = 0; i <arr.length; i++){
+        callback(arr[i]);
+    }
+}
+
+each(arr,function (num) {
+    console
+})

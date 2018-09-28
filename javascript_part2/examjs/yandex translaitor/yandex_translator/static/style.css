@@ -1,0 +1,40 @@
+html{
+	font: 0.75em/1.5em Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+body{
+	background-color: black;
+	color: white;
+}
+.content{
+	margin-top: 5%;
+	height: 20%;
+}
+.source-parent{
+	background-color: gray;
+}
+.bx{
+	width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #000;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+img{
+	width: auto;
+	height: 20px;
+}
+button{
+	height: 40px;
+	margin-top: 10px;
+	border-radius: 2px;
+}
+#source{
+	border-radius: 2px;
+	border: none;
+	box-shadow: 2px 2px gray;
+	background-color: white;
+}

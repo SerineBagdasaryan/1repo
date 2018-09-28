@@ -1,0 +1,130 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function f(num){
+
+if((num%2 == 0) || (num%2 == 1)){
+return (num-(num%2==0));
+
+}else{
+
+return num;
+}
+
+}
+console.log(f(8));
+
+
+/*var taskList = [], index = 0;
+function setDateField() {
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+    var hour = date.getHours();
+    var minute = date.getMinutes();
+    var date_text = year + "-" + (month<10 ? "0" + month: month) + "-" +
+        (day<10 ? "0"+day: day) + "T" + (hour<10 ? "0"+hour: hour) + ":" +
+            (minute<10 ? "0" +  minute : minute);
+    document.getElementsByName("date")[0].value = date_text;
+    document.getElementsByName("date")[0].min = date_text;
+    document.getElementsByName("date")[0].max = "2200-01-01T00:00";
+}
+function Task(title, descr, date) {
+    this.title = title;
+    this.descr = descr;
+    this.createdDate = new Date();
+    this.deadlineDate = new Date(date);
+    this.status = "waiting";
+    this.completedOn = "";
+    this.timer = "";
+}
+function createTask() {
+    var title = document.getElementsByName("title")[0].value;
+    var descr = document.getElementsByName("descr")[0].value;
+    var date = document.getElementsByName("date")[0].value;
+    taskList[index] = new Task(title, descr, date);
+    showTask(index);
+    index++;
+}
+function showTask(i) {
+    switch(taskList[i].status) {
+        case "waiting" : document.getElementById("waiting").innerHTML += createHTML(i, 0);
+            taskList[i].timer = setInterval(function() { timer(i); }, 1000);
+        break;
+        case "completed" : document.getElementById("completed").innerHTML += createHTML(i, 1);
+        break;
+        case "expired" : document.getElementById("expired").innerHTML += createHTML(i, 2);
+        break;
+    }
+}
+function createHTML(i, status) {
+    var htmlString = "<div id=\"" + i + "\" class=\"taskCont\"><div><h4>" +
+    taskList[i].title + "</h4>" +
+    "<p class=\"time\">" + (status == 0 ? "Time remaining: <span id=\"t" + i +
+    "\"></span></p>" : (status == 1 ? "Completed On: " +
+    taskList[i].completedOn.toDateString() : "Expired On: " +
+    taskList[i].deadlineDate.toDateString())) + "</p>" +
+     "</div><div><p class=\"descr\">" + taskList[i].descr +
+     "</p></div><div><p class=\"time\">Created On:" +
+     taskList[i].createdDate.toDateString() +
+     "</p><p class=\"time\">Deadline: " +
+     taskList[i].deadlineDate.toDateString() + "</p></div><div>" +
+     (status == 0 ? "<button class=\"complete\" onclick=\"completeTask(" + i +
+    ")\">Complete</button>" : "") + "<button class=\"delete\" onclick=\"deleteTask(" +
+    i + ")\">Delete</button>" + "</div></div>";
+    return htmlString;
+}
+function timer(i) {
+    var d = new Date();
+    var diff = taskList[i].deadlineDate - d;
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    document.getElementById("t"+i).innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    if (diff < 0) {
+        expireTask(i);
+    }
+}
+function completeTask(i) {
+    taskList[i].status = "completed";
+    taskList[i].completedOn = new Date();
+    clearInterval(taskList[i].timer);
+    document.getElementById(i).parentNode.removeChild(document.getElementById(i));
+    showTask(i);
+}
+function deleteTask(i) {
+    document.getElementById(i).parentNode.removeChild(document.getElementById(i));
+    clearInterval(taskList[i].timer);
+    taskList[i] = null;
+}
+function expireTask(i) {
+    taskList[i].status = "expired";
+    clearInterval(taskList[i].timer);
+    document.getElementById(i).parentNode.removeChild(document.getElementById(i));
+    showTask(i);
+}
+function add() {
+    var title = document.getElementsByName("title")[0].value;
+    var descr = document.getElementsByName("descr")[0].value;
+    var date = document.getElementsByName("date")[0].value;
+    if(title && descr && date) {
+            createTask(title, descr, date);
+            document.getElementsByName("title")[0].value = "";
+            document.getElementsByName("descr")[0].value = "";
+        }
+    else {
+        alert("enter all fields");
+    }
+    setDateField();
+}
+window.addEventListener('load', setDateField, false);
+document.getElementById("add").addEventListener('click', add, false);*/
+
+</script>
+</body>
+</html>

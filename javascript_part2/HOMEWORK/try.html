@@ -1,0 +1,80 @@
+<!docttype html>
+<html>
+<head>
+<title>TRY Form</title>
+<style>
+#form2{
+display:none;
+}
+form {
+display:flex;
+flex-direction: column;
+width: 200px;
+height:200px;
+
+}
+#name, #surname, #pas {
+margin :7px;
+}
+#cont {
+display:none;
+background-color:lightblue;
+width :200px;
+height:200px;
+border: 1px solid blue;
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+<form id='form1'>
+<label> FORM</label>
+<input type="text" id="name" placeholder="Name" value="">
+<input type ="text" id= "surname" placeholder="Surname" value="">
+<input type="password" id="pas" placeholder="Password" value="">
+<input type="button" onclick = "inValidate()" value="Click">
+</form>
+<div id="cont">
+<p id="demo"></p>
+<p id= "demo1"></p>
+<p id="demo2"></p>
+</div>
+<form id= "form2">
+<label>Login</label>
+<input type="text" id ="nam" placeholder="Name" value="">
+<input type="text" id ="surnam" placeholder="Surname" value="">
+<input type="button" onclick="login()" value="click">
+</form>
+<script>
+var user = {};
+function inValidate() {
+user.name=document.getElementById("name").value;
+user.surname=document.getElementById("surname").value;
+user.password=document.getElementById("pas").value;
+document.getElementById("demo").innerHTML=user.name;
+document.getElementById("demo1").innerHTML=user.surname;
+document.getElementById("demo2").innerHTML=user.password;
+document.getElementById("form1").style.display="none";
+document.getElementById("form2").style.display="block";
+}
+function login (){
+user.name=document.getElementById("nam").value;
+user.surname=document.getElementById("surnam").value;
+if((
+document.getElementById("nam").value != document.getElementById("name").value) ||
+ (document.getElementById("surname").value =! (document.getElementById("surnam").value))){
+         alert("is not equall");
+}else{
+document.getElementById("form2").style.display="none";
+document.getElementById("cont").style.display="block";
+
+}
+}
+//1. validatia sargeq buttoni clickic heto <br>
+//2. "save data" button clickic heto gnal login form (display none,block) <br>
+//3. login buttony sexmeluc heto hamematel useri data mutqagras datai het 
+//(hamnkneluc het cuc tal user data ete voch cuc tveq es message "Incorrect conditions")
+</script>
+</body>
+</html>

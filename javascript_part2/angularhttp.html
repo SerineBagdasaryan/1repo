@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<p>Today's welcome message is:</p>
+
+
+<div ng-repeat="x in myWelcome">
+{{x.id}}-{{x.title}}-{{x.price}}
+<img ng-src="{{x.main_picture}}"/>
+</div>
+
+
+</div>
+
+<p>The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.</p>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+$http.get("https://admin.factorfan.com/api/favorites")
+.then(function(response) {
+$scope.myWelcome = response.data.data.games;
+
+
+});
+});
+</script>
+
+</body>
+</html>
+

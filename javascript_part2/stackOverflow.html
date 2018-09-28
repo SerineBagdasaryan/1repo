@@ -1,0 +1,186 @@
+var maxNum = [5, -1, 40, 355, 17, 3];
+
+for (var i = 0; i < maxNum.length; i++) {
+    if(maxNum[i] > maxNum[0]){
+        maxNum[0] = maxNum[i];
+    }
+
+}
+alert(maxNum[0]);
+
+
+
+
+
+
+
+
+
+  min = myArray[0];
+  max = min;
+  for (i = 1; i < myArray.length; ++i) {
+      if (myArray[i] > max) max = myArray[i];
+      if (myArray[i] < min) min = myArray[i];
+  }
+  
+  
+  
+  {
+    for (i = 0; i < myArray.length; ++i){
+    if (myArray[i] > myArray[i + 1]) max = myArray[i];
+    else min = myArray[i];
+}
+document.write(max);
+document.write('</br>');
+document.write(min);
+
+
+
+!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+
+  var arr = [1, 0, -1, -5, 2, -3, 4, 110, -18];
+  function transformDigit(arr) {
+    var arrLen = arr.length;
+    for (var i = 0; i < arrLen; i++) {
+      if (arr[i] < 0) {
+        arr[i] += -1;
+      } else {
+        arr[i] += 1;
+      }
+    }
+    return arr;
+  }
+  fTrans = transformDigit(arr); //Вызываем срабатывание функции и записываем результат в переменную
+  console.log(fTrans); //Выводим значение переменной в консоль
+  document.write("fTrans result: " + "[" + fTrans + "]"); //Выводим значение переменной на страницу
+
+  </script>
+</body>
+</html>
+2. Посчитать сумму и среднее арифметическое всех элементов массива
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+
+  var arr = [1, 0, -1, -5, 2, -3, 4, 110, -18];
+  function sum(arr) {
+    var arrLen = arr.length,
+        result = 0;
+    for (var i = 0; i < arrLen; i++) {
+      result += arr[i];
+    }
+    return result;
+  }
+  function avg(arr) {
+    var arrLen = arr.length,
+        result = 0;
+    for (var i = 0; i < arrLen; i++) {
+      result += arr[i];
+    }
+    var division = result / arrLen;
+    return division;
+  }
+  var fSum = sum(arr),
+      fAvg = avg(arr);
+
+  console.log(fSum, fAvg);
+  document.write("fSum result: " + fSum + " ");
+  document.write("fAvg result: " + fAvg);
+
+  </script>
+</body>
+</html>
+3. Вывести максимальный и минимальный элемент массива
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+
+  var arr = [1, 0, -1, -5, 2, -3, 4, 110, -18],
+      fMax,
+      fMin;
+  function getMax(arr) {
+    var arrLen = arr.length,
+        maxEl = arr[0];
+    for (var i = 0; i < arrLen; i++) {
+      if (maxEl < arr[i]) {
+        maxEl = arr[i];
+      }
+    }
+    return maxEl;
+  }
+  function getMin(arr) {
+    var arrLen = arr.length,
+        minEl = arr[0];
+    for (var i = 0; i < arrLen; i++) {
+      if (minEl > arr[i]) {
+        minEl = arr[i];
+      }
+    }
+    return minEl;
+  }
+  fMax = getMax(arr);
+  fMin = getMin(arr);
+  console.log(fMax, fMin); 
+  document.write("fMax result: " + fMax + " ");
+  document.write("fMin result: " + fMin);
+
+  </script>
+</body>
+</html>
+4. Создать функцию, которая принимает на вход массив, находит в этом массиве максимальный и минимальный элементы и обменивает их местами
+Например:
+var arr = [1, 2, 3, 4, 5, 3, 4];
+swapMinWithMax(arr);
+console.log(arr); // -> [5, 2, 3, 4, 1, 3, 4]
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+  var arr = [1, 110, -1, -5, 2, -3, 4, -18, 10, 18];
+  function swapMinWithMax(arr) {
+    var arrLen = arr.length,
+        resultMin = arr[0],
+        resultMax = arr[0],
+        indexMin = 0,
+        indexMax = 0;
+    for (var i = 0; i < arrLen; i++) {
+      if (resultMin > arr[i]) {
+        resultMin = arr[i];
+        indexMin = i; //Также можно использовать подход с определением индекса indexMin = arr.indexOf(resultMin); но он медленнее
+      }
+      else if (resultMax < arr[i]) {
+        resultMax = arr[i];
+        indexMax = i; //Также можно использовать подход с определением индекса indexMax = arr.indexOf(resultMax); но он медленнее
+      }
+    }
+    arr[indexMin] = resultMax;
+    arr[indexMax] = resultMin;
+    return arr;
+  }
+
+  swapMinWithMax(arr);
+
+
+
+
+
+

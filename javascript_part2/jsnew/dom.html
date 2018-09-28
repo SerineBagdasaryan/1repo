@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<style>
+		img{
+			width: 250px;
+			height: 150px;
+		}
+	</style>
+	
+</head>
+
+<body>
+<div >
+	<button id = "yes" onclick="return true;">
+	</button>
+</div>
+	<table >
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Surname</th>
+			</tr>
+			
+		</thead>
+		<tbody>
+			<tr id="t1">
+				<td id="d1">արժեք 1</td>
+				<td id="d2">արժեք 2</td>
+			</tr>
+			<tr id="t2">
+				<td id="d3">արժեք 11</td>
+				<td id="d4">արժեք 21</td>
+			</tr>
+		</tbody> 
+	</table>
+	
+	<div id="dv2">
+  <img src="http://assets.epicurious.com/photos/57c5c6d9cf9e9ad43de2d96e/master/pass/the-ultimate-hamburger.jpg" id="hamb" onclick="addimg1()">
+  <img id = "b" onclick = "remove()" src = "http://www.hubert.jpn.hmcloud.pl/owoce.jpg">
+</div>
+	<script>
+		alert(window.innerHeight);
+		alert(window.screen.height);
+	function addimg1()
+{
+
+	var div2 = document.getElementById("dv2");
+	var hamb = document.getElementById("b");
+	var banan = document.createElement("img");
+	banan.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq0Wis02ezZdEAQGdTSlGiVOYTjA8Los0Zr8X2sF5-O1AoBu9jdw";
+	div2.insertBefore(banan,hamb );
+
+}
+		document.getElementById("d1").style.fontSize = "22px";
+		console.log(document.getElementById("t1").parentNode);
+		var a = document.getElementsByTagName("td");
+		console.log(a);
+		//console.log(a[3]);
+		
+		/*function functtt(){
+	var par = document.getElementsByClassName("pp");
+	var x = "";
+	for(var i=0;i〈par.length;i++)
+	{
+		x+= par[i].innerHTML;
+	}
+	alert(x)
+}*/
+		function remove(){
+			var res = confirm("Do you want to delete?");
+			if(res){//true
+				document.getElementById("b").style.display = "none";
+			}else{
+				alert("image is not removed")
+			}
+			
+			if(confirm("hdghfjdegfej?")){
+				jkhghkfgkf
+			}else{}
+		}
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

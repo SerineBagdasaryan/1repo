@@ -1,0 +1,102 @@
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$ git init
+Initialized empty Git repository in C:/Users/Admin/Desktop/less/.git/
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        arr1.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$ git add .
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   arr1.html
+
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$  git commit --m "first commit"
+[master (root-commit) 806d638] first commit
+ 1 file changed, 40 insertions(+)
+ create mode 100644 arr1.html
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$ git remote add origin https://github.com/SerineBagdasaryan/1repo.git
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$ git checkout -b b1
+Switched to a new branch 'b1'
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (b1)
+$ git branch
+* b1
+  master
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (b1)
+$ git push -u origin b1
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 576 bytes | 82.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/SerineBagdasaryan/1repo.git
+ * [new branch]      b1 -> b1
+Branch 'b1' set up to track remote branch 'b1' from 'origin'.
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (b1)
+$ git checkout master
+Switched to branch 'master'
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$ git coomit --m "message"
+git: 'coomit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$ git commit --m "message"
+On branch master
+nothing to commit, working tree clean
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (master)
+$ git checkout b1
+Switched to branch 'b1'
+Your branch is up to date with 'origin/b1'.
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (b1)
+$ git branch
+* b1
+  master
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (b1)
+$ git push --set-upstream origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/SerineBagdasaryan/1repo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Admin@Admin-▒▒ MINGW32 ~/Desktop/less (b1)
+$

@@ -1,0 +1,41 @@
+<form class="calc" ng-controller="CalcCtrl">
+    <p class="calc-display">
+        <input type="text" name="output" id="res" value="{{output}}" class="calc-display-input">
+    </p>
+    <p class="operators">
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("/")'>÷</button>
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("*")'>x</button>
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("-")'>-</button>
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("+")'>+</button>
+    </p>
+    <p class="operators">
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("sin")'>sin
+        </button>
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("cos")'>cos
+        </button>
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("tan")'>tan
+        </button>
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("log")'>log
+        </button>
+    </p>
+    <p class="operators">
+        <button type="button" class="calc-button calc-button-brown calc-button-big"
+                ng-click='operate("sqrt")'>&radic;</button>
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("pow")'>x^2
+        </button>
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("pow3")'>x^3
+        </button>
+        <button type="button" class="calc-button calc-button-brown calc-button-big" ng-click='operate("exp")'>e^x
+        </button>
+    </p>
+    <p class="calc-row">
+        <button type="button" class="calc-button" ng-click="updateOutput($index)"
+                ng-repeat="n in [0,1,2,3,4,5,6,7,8,9]">{{n}}
+        </button>
+        <button type="button" class="calc-button" ng-click="updateOutput('.')">.</button>
+        <button type="button" class="calc-button" ng-click='output = 0'>C</button>
+    </p>
+    <p class="calc-row">
+        <button type="button" class="calc-button calc-button-equal calc-button-big" ng-click="equal()">=</button>
+    </p>
+</form>

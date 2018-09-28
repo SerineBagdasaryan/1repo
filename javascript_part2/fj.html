@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+function filter(array,func){
+var arr=[];
+array.forEach(y=> {
+if(func(y)){
+arr.push(y);
+}
+});
+return arr;
+}
+var arr=[34,23,12,97,9,6,8];
+var res=filter(arr,y=>{
+return y > 20;
+});
+document.write(res);
+</script>
+</body>
+
+        

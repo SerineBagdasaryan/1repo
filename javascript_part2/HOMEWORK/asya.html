@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register and login forms </title>
+    <link rel="stylesheet" href="asya.css">
+</head>
+
+<body>
+    <!--1. validatia sargeq buttoni clickic heto <br> 2. "save data" button clickic heto gnal login form (display none,block) <br> 3. login buttony sexmeluc heto hamematel useri ata mutqagras datai het (hamnkneluc het cuc tal user data ete voch cuc tveq es
+    message "Incorrect conditions")-->
+    <div class="title" id="title">
+        <h2>User Register Form</h2>
+    </div>
+    <form id="register">
+        <h2>Register for free accaunt</h2>
+        <div class="registerDiv">
+            <label>Firstname:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="firstname" value="">
+            <label>Lastname:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="lastname" value="">
+            <label>Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="phone" value="">
+            <label>Password:</label>
+            <input type="password" id="password" name="password" placeholder="password" value="">
+            <label>E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email" value="">
+            <input type="button" value="Save data" onclick="setUserData()" class="btn">
+        </div>
+
+
+    </form>
+    <div id="userinfo" style="display: none">
+        <div id="info"></div>
+        <div class="img"></div>
+    </div>
+
+    <div id="loginform">
+        <h2>Login form</h2>
+        <div class="loginDiv">
+            <label>E-mail:</label>
+            <input type="email" name="email" placeholder="email" id="loginEmail" value="">
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="repeat password" id="repeatPass">
+            <input type="button" value="login" class="btn" onclick="setAllData()">
+        </div>
+
+        </form>
+
+
+
+
+    </div>
+    <script src="asya.js"></script>
+</body>
+
+</html>

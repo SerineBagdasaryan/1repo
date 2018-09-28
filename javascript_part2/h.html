@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+
+function validate(){
+	if (document.forms.myForm.name.value == "") {
+
+		 alert("Enter name");
+	} else{
+		var reg = /([a-zA-Z])+/g;
+		var name = document.forms.myForm.name.value;
+		var result = name.match(reg);
+		if (result) {
+			alert("Your" + name);
+		} else {
+			alert("Enter a tarer");
+		}
+		
+	}
+	if (document.forms.myForm.password.value == "") {
+
+		 alert("Enter a password");
+	} else{
+		var reg2= /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8})$/;
+		var pswd = document.forms.myForm.password.value;
+		var result2 = pswd.match(reg2);
+		if (!result2) {
+			alert("Your password " + pswd);
+		}
+		else {
+			alert("Error");
+		}
+	}
+
+	
+
+	var errMessageCPassword = "";
+	if (document.forms.myForm.comfirmpassword.value == "") {
+		errMessageCPassword = "Պարտադիր դաշտ";
+			alert(errMessageCPassword);
+	} else  {
+			if (document.forms.myForm.comfirmpassword.value !== document.forms.myForm.password.value) {
+				alert("Սխալ մուտքագրում");
+			} else {
+				alert("Ծածկագրերը հաընկնում են");
+			}
+	}  
+}
+
+
+</script>
+<body>
+</html>

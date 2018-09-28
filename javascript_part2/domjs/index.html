@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container-fuild">
+	<div class="container" id="container">
+		<div class="title">Title of tasks</div>
+		<textarea name="text" id="myTextarea" cols="30" rows="10"></textarea>
+		<input type="text" id="timer" disabled>
+		<input type="text" id="t" disabled>
+	<input id="button" type="submit" name="submit" value="Send For Working" onmouseover="changeColor(this)" onmouseout="color(this)" >
+	</div>
+	<div class="container" id="container1">
+		<div class="title">Open</div>
+			<div class="description" id="description"></div>
+		<input type="submit" id="timer1" value="Stop Timer" onmouseover="changeColor(this)" onmouseout="color(this)">
+	<input id="btn" type="submit" name="submit" value="Send For Done" onmouseover="changeColor(this)" onmouseout="color(this)">
+	</div>
+	<div class="container" id="container2">
+		<div class="title">Done</div>
+		<!-- <input type="text"> -->
+		<input type="text" id="input" name="title" value="It's checked..." disabled>
+	<input id="bttn" type="submit" name="submit" value="Click me, if everything is OK!" onmouseover="changeColor(this)" onmouseout="color(this)">
+	<div class="p" id="p"></div>
+	</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+
+//    var family  = ["brother", "sister"];
+//    family.unshift("grandfather", "grandmother");
+//    console.log(family);
+//    console.log(family.length);
+//    console.log(family.length = 2);
+//    console.log(family);
+//    family.push("father");
+//    console.log(family);
+//    family.shift();
+//    family.pop();
+//    console.log(family);
+//    
+    
+    var arr = [1,2,6,4,7,8,5,5];
+////    var a = arr.filter(function(element){
+////        var res = element>2;
+////        return res;
+////    });
+////    console.log(a);
+//
+//    
+//    var red = arr.reduce(function (first, second){
+//        return first + second;
+//    })
+//    console.log(red);
+    
+//    
+    var task = [
+        {name:"dslfs sdfklj asd kfj",
+        duration:240
+        },
+        {name:"asdfalsjdf asklfj askdfj ",
+        duration:120},
+        {name:"aslkdfj asldkfj asdlkfj",
+        duration:60}
+        ];
+    
+//    var newarr;
+//    for(var i = 0; i<task.lenght; i++){
+//        console.log(newarr.push(task[i].name));
+//    }
+    
+    
+//  function altmap(array, callback){
+//     
+//      var new_arr = [];
+//      for(i=0; i<array.length; i++){
+//          new_arr.push(callback(array[i]));
+//      }
+//      return new_arr;
+//  }
+//    
+//    
+//    var res = altmap(task, function(task){
+//        return task.duration
+//    });
+//    
+//   console.log(res); 
+    
+      function altfilter(array, callback){
+     
+      var new_arr = [];
+      for(i=0; i<array.length; i++){
+          if(callback(array[i])){
+          new_arr.push(array[i]);
+          }
+      } 
+      return new_arr;
+  }
+    
+          var filt = altfilter(arr, function (element){
+              var res = element>4;
+              return res;
+          });
+          console.log(filt);
+    
+        var durr = altfilter(task, function (t){
+            return t.duration > 200;
+        });
+        console.log(durr);
+    </script>
+	</body>
+	</html>

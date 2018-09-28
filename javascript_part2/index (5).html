@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div class="ddddd">
+	<p class="pp">պարագրաֆ 1</p>
+	<p class="pp">պարագրաֆ 2</p>
+</div>
+
+<button onclick ="functtt()">click</button>
+<script>
+
+function functtt(){
+	var par = document.getElementsByClassName("pp");
+	for(var i=0;i<par.length;i++)
+	{
+		alert(par[i].innerHTML);
+	}
+}
+
+</script>
+</body>
+</html>

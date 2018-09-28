@@ -1,0 +1,77 @@
+<div class="container">
+    <section class="section team-section text-center pb-3 bg-info">
+
+        <!--Section heading-->
+        <h1 class="section-heading h1 pt-4">Create a new testimonial</h1>
+        <br>
+        <!--Section description-->
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="profession" placeholder="Enter your profession">
+            </div>
+            <br>
+            <div class="form-group">
+                <textarea class="form-control" rows="4" cols="50" placeholer="Enter your quote">
+                                      </textarea>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="form-group">
+                <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Browse… <input type="file" id="imgInp">
+                </span>
+            </span>
+                    <input type="text" class="form-control" readonly>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </section>
+    <section class="section team-section text-center pb-3">
+
+        <!--Section heading-->
+        <h1 class="section-heading h1 pt-4">Testimonials</h1>
+        <br>
+        <!--Section description-->
+
+        <!--Grid row-->
+        <div class="row text-center" ng-controller="testimonialsCtrl">
+
+            <!--Grid column-->
+            <div class="col-md-4 mb-r" ng-repeat="key in testimonials">
+
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar">
+                        <img src="{{key.avatar}}" class="rounded-circle z-depth-1 img-fluid">
+                    </div>
+
+                    <!--Content-->
+                    <h4 class="mb-3">{{key.name}}</h4>
+                    <h6 class="mb-3 font-bold grey-text">{{key.profession}}</h6>
+                    <p><i class="fa fa-quote-left"></i> {{key.quote}}</p>
+
+                    <!--Review-->
+                    <div class="orange-text">
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa fa-star"> </i>
+                        <i class="fa {{key.review}}"> </i>
+                    </div>
+                </div>
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </section>
+</div>
+

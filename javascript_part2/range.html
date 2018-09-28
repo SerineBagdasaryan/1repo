@@ -1,0 +1,56 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function range(start, end) {
+
+    var new_array = [];
+
+    var step = 1;
+
+    if(arguments.length === 3){
+        step = arguments[2];
+    }
+
+    if(start > end){
+        step = -1;
+    }
+
+    var backwardsCheck = function(i, end) {
+        if (step < 0) {
+            return i >= end;
+        } else {
+            return i <= end;
+        }
+    }
+
+    for (var i = start; backwardsCheck(i, end); i+=step) {
+        new_array.push(i);
+    }
+
+    return new_array;
+}
+
+
+function sum(arr) {
+    var total = 0;
+    for(var j = 0; j < arr.length; j++){
+        total += arr[j];
+    }
+    return total;
+}
+console.log(range(10,1,1));
+
+//var number = range(0,5,2);//2 qayleri qanakn e
+//document.write(number);
+
+var letter = range("a","z",1);
+document.write(letter);
+</script>
+	</body>
+	</html>
+
+
+
+	

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<style>
+		div{
+			border: 1px double #003380;
+			background-color: #99c2ff;
+			margin: 20px auto;
+			text-align: left;
+			padding: 10px;
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		var library = [ 
+   {
+       author: 'Bill Gates',
+       title: 'The Road Ahead',
+       readingStatus: true,
+	   kuku: function(){
+			return "method";
+	   }
+   },
+   {
+       author: 'Steve Jobs',
+       title: 'Walter Isaacson',
+       readingStatus: true
+   },
+   {
+       author: 'Suzanne Collins',
+       title:  'Mockingjay: The Final Book of The Hunger Games', 
+       readingStatus: false
+   }];
+	var html = "";
+	for( var i = 0; i < library.length; i++){
+		html += "<div>";
+		for(var k in library[i]){
+
+			html += "<p>"+ k.toUpperCase() + "-" + library[i][k]+"</p>"
+		}
+		
+		html += "</div>";
+	}
+	document.write(html);
+	console.log(library);
+	console.log(library[0].kuku());
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

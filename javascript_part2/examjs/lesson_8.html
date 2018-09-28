@@ -1,0 +1,108 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var a = [];
+			a.push("hello", "world", "!");
+			a.splice(0, 0, "Armenia", "Gyumri", "2017");
+			a.splice(3, 1, "Ararat");
+			console.log(a);
+			var b = a.slice(2, 4);
+			console.log(b);	
+
+		
+			/*for(var i = 0; i < a.length; i++){
+				document.write(a[i] + "<br>");
+			}*/
+			
+			/*var x = parseInt(prompt("insert your age"));
+			while(isNaN(x) && (!isNaN(x) > 120)){
+					x = parseInt(prompt("insert your age"));		
+			}
+			
+			while(x > 120){
+				x = parseInt(prompt("insert your age"));
+			}
+			
+			document.write(x);*/
+			
+			/*var i = 4;
+				while(i <= -34){
+					document.write(i + "<br>");
+					i += 5;
+				}
+				
+				do{
+					document.write(i + "<br>");
+					i += 5;
+				}while(i <= 34)*/
+				
+			
+			/*var arr = [4,5,3,7,9,20,10,48,63,57,58,44,100];
+			for(var j = 0; j < arr.length; j++){
+				if(arr[j] == 10 ){
+					console.log(j);
+					break;
+				}else{
+					document.write(arr[j] + "<br>");
+				}
+			}*/
+			/*var sum = 0;
+			for(var i = 30; i <= 80; i++){
+				sum += i;
+			}
+			document.write("30 ic 80 i Gumar@ = " + sum);*/
+			
+			/*var a = parseInt(prompt("Insert number"));
+			
+			*/
+			/*for(var i = 5; i >= 0; i--){
+				
+				for(var j = i; j <= 5; j++){
+					document.write("*");
+				}
+				document.write("<br>");
+			}*/
+			
+			var str = "LdfGj.ghAfEdhfjkFd.fjdg.ORhhjd.Sgj";
+			//str.toUpperCase()
+			for(var i = 0; i< str.length; i++){
+				if(i % 2 == 0){
+					document.write(str[i].toUpperCase());
+				}else{
+					document.write(str[i].toLowerCase());
+				}
+			}
+			document.write("<br>" + str.toUpperCase());
+			alert(str.length);
+			var c = str.split(".");
+			var d = c.toString().split("j").toString().split(",").join("-");
+			console.log(d);
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

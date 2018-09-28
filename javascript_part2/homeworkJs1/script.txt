@@ -1,0 +1,118 @@
+function checked(){
+
+	var pizza = document.getElementsByName('pizza');
+	if (pizza) {
+		var len = pizza.length;
+	    var price = 0;
+
+		if (document.getElementById('mashroom').checked == true) {
+			var x = 600;
+			// alert("Սնկով պիցցան արժե " + x + " դրամ");
+			if (true) {
+				price += x ;
+			}	
+		}
+		if(document.getElementById('vegetables').checked == true){
+			var x1 = 300;
+			// alert("Բանջարեղենով պիցցան արժե " + x1 + " դրամ");
+
+				if (true) {
+				price += x1 ;
+			}
+		}
+		if(document.getElementById('cheese').checked == true){
+			var x2 = 500;
+			// alert("Պանրով պիցցան արժե " + x2 + " դրամ");
+
+			if (true) {
+				price += x2 ;
+			}
+		}
+		if(document.getElementById('olives').checked == true){
+			var x3 = 700;
+			// alert("Ձիթապտղով պիցցան արժե " + x3 + " դրամ");
+
+			if (true) {
+				price += x3 ;
+			}
+		}
+	}
+
+
+if (document.getElementsByName('juice')) {
+		if (document.getElementById('limonad').checked == true) {
+			var x = 150;
+			// alert("Լիմոնադն " + x + " դրամ")
+			if (true) {
+				price += x ;
+			}
+		} 
+		if (document.getElementById('nature').checked == true) {
+			var x1 = 450;
+			// alert("Բնական հյութն արժե " + x1 + " դրամ")
+			if (true) {
+				price += x1;
+			}
+		} 
+		if(document.getElementById('juice').checked == true){
+			var x2 = 650;
+			// alert("Կոմպոտն արժե " + x2 + " դրամ");
+			if (true) {
+				price += x2 ;
+			}
+		} 
+		if(document.getElementById('fanta').checked == true){
+			var x3 = 350;
+			// alert("Fanta-ն արժե " + x3 + " դրամ");
+			if (true) {
+				price += x3 ;
+			}
+		} 
+		if(document.getElementById('cola').checked == true){
+			var x4 = 350;
+			// alert("Cola-ն արժե " + x4 + " դրամ");
+			if (true) {
+				price += x4 ;
+			}
+		}
+	}
+
+	
+	if (document.getElementsByName('cake')) {
+		if (document.getElementById('mikado').checked == true) {
+			var x = 650;
+			// alert("Միկադոն արժե " + x + " դրամ")
+			if (true) {
+				price += x ;
+			}
+		} 
+		if (document.getElementById('mrjb').checked == true) {
+			var x1 = 750;
+			// alert("Մրջնի Բույնն արժե " + x1 + " դրամ")
+			if (true) {
+				price += x1 ;
+			}
+		} 
+		if(document.getElementById('cakeWithChocolate').checked == true){
+			var x2 = 850;
+			// alert("Շոկոլադով տորթն արժե " + x2 + " դրամ");
+			if (true) {
+				price += x2 ;
+			} 
+		} 
+		if(document.getElementById('kex').checked == true){
+			var x3 = 550;
+			// alert("Կեքսն արժե " + x3 + " դրամ");
+			if (true) {
+				price += x3 ;
+			} 
+		} 
+	}
+	
+			alert("Ձեր պատվերն ընդունված է");
+	
+	
+	document.write("Դուք պետք է վճարեք " + price + " դրամ");
+} 
+
+

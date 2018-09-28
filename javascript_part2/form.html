@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>First site</title>
+</head>
+
+<body>
+<form>
+
+firstName:<input type="text" id="name" value =""><br>
+lastName:<input type="text" id="lastName" value=""> <br>
+age:<input type="number" id="age" value=""><br>
+<button onclick = "myFunction()" type='button'>Try it</button>
+<p id="demo"></p>
+</form>
+
+<script>
+var person ={}
+function myFunction(){
+person.fname = document.getElementById("name").value;
+person.lastName = document.getElementById("lastName").value;
+person.age = document.getElementById("age").value;
+document.getElementById('demo').innerHTML=person.fname;
+document.getElementById('demo').innerHTML=person.lastname;
+document.getElementById('demo').innerHTML=person.age;
+
+ 
+
+
+console.log(person)
+}
+
+var userInfo = {};
+        console.log('before setting ... seting ....', userInfo);
+
+        function setUserData(){
+     /// avelacnel validacianer
+            if( document.getElementById('firstname').value == ''){
+                alert('please fill data');
+                return false;
+            }
+            if(document.getElementById('firstname').value.length >7 ){
+                alert('firstname must be less then 7');
+                return false;
+            }
+
+            userInfo.firstname = document.getElementById('firstname').value;
+            userInfo.lastname = document.getElementById('lastname').value;
+            userInfo.phone = document.getElementById('phone').value;
+            userInfo.email = document.getElementById('email').value;
+            document.getElementById('register').style.display='none';
+            document.getElementById('loginform').style.display='block';
+            for (x in userInfo) {
+
+                document.getElementById('userinfo').innerHTML +=x+'<br>';
+            }
+
+
+        }
+
+

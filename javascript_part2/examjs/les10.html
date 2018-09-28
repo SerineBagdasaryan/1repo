@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<style>
+			div{
+				width: 150px;
+				height: 100px;
+				margin: 20px auto;
+				
+					
+			}
+		</style>
+	</head>
+	<body>
+	<button onclick="changeColor('red','name')" id="red">Red</button>
+	<button onclick="changeColor('blue','container')" id="blue">Blue</button>
+	<div id="container"></div>
+	<div id="name"></div>
+	<script>
+	function changeColor(color,el_id){
+     	document.getElementById(el_id).style.backgroundColor = color;
+	}
+	
+	</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
